@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Plog</title>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+</head>
+<body>
+<div id="app"></div>
+<form action="http://localhost:8080/post" id="uploadForm" method="POST">
+    <label for="title">Tittel</label>
+    <br>
+    <input id="title" name="title" type="text" value="Tittel på post">
+    <br>
+    <label for="description">Beskrivelse</label>
+    <br>
+    <textarea autocomplete="off" id="description" name="description" placeholder="e.g. Hello my name is Alex" rows="10"
+              spellcheck="true" wrap="soft">Hello Rust</textarea>
+    <br>
+    <label for="date">Dato</label>
+    <input id="date" name="date" type="date"/>
+    <br>
+    <div>
+        <label for="images">Bilder</label>
+        <input accept="image/*" id="images" multiple name="images" type="file"/>
+        <input id="resizedImageInput" name="resizedImages" type="hidden">
+    </div>
+    <div class="preview">
+        <p>No files currently selected for upload</p>
+    </div>
+    <br>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+    const resizedImageDataUrls = [];
+    const input = document.getElementById("images");
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('date').valueAsDate = new Date();
+
+        input.style.opacity = "0";
+        input.addEventListener("change", updateImageDisplay);
+    });
+
+    function updateImageDisplay() {
+        const preview = document.querySelector(".preview");
+        while (preview.firstChild) {
+            preview.removeChild(preview.firstChild);
+        }
+
+        const curFiles = input.files;
+        if (curFiles.length === 0) {
+            const para = document.createElement("p");
+            para.textContent = "No files currently selected for upload";
+            preview.appendChild(para);
+        } else {
+            const list = document.createElement("ol");
+            preview.appendChild(list);
+
+            for (const file of curFiles) {
+                resizeImage(file, 1015, 1350, async function (blob) {
+                    try {
+                        const location = await getLocationInfo(file);
+                        resizedImageDataUrls.push({
+                            filename: file.name,
+                            dataUrl: blob.data,
+                            location: location,
+                        });
+
+                        const listItem = document.createElement("li");
+                        const image = document.createElement("img");
+                        const para = document.createElement("p");
+
+                        image.alt = image.title = file.name;
+                        image.src = URL.createObjectURL(blob.img);
+
+                        para.innerText = `File name ${file.name}.`;
+                        if (location) {
+                            para.innerText += `\nLatitude: ${location.latitude}, Longitude: ${location.longitude}`;
+
+                            if (location.geocoding) {
+                                const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
+                                para.innerText += `\nLocation: ${locationName}`;
+                            } else {
+                                para.innerText += '\nLocation not found';
+                            }
+                        } else {
+                            para.innerText += '\nNo GPS data found';
+                        }
+
+                        listItem.appendChild(image);
+                        listItem.appendChild(para);
+
+                        list.appendChild(listItem);
+                    } catch (error) {
+                        console.error('Error getting location info:', error);
+                    }
+                });
+            }
+        }
+    }
+
+    function resizeImage(file, maxWidth, maxHeight, callback) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const img = new Image();
+            img.onload = function () {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                let width = img.width;
+                let height = img.height;
+
+                // Calculate the new dimensions while maintaining the aspect ratio
+                if (width > height) {
+                    if (width > maxWidth) {
+                        height *= maxWidth / width;
+                        width = maxWidth;
+                    }
+                } else {
+                    if (height > maxHeight) {
+                        width *= maxHeight / height;
+                        height = maxHeight;
+                    }
+                }
+
+                canvas.width = width;
+                canvas.height = height;
+                ctx.drawImage(img, 0, 0, width, height);
+
+                // Convert the canvas to a Blob and execute the callback
+                canvas.toBlob(function (blob) {
+                    const reader = new FileReader();
+                    reader.onloadend = function () {
+                        callback({img: blob, data: reader.result});
+                    };
+                    reader.readAsDataURL(blob);
+                }, 'image/jpeg');
+            };
+            img.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    function getLocationInfo(file) {
+        return new Promise((resolve, reject) => {
+            EXIF.getData(file, function () {
+                const lat = EXIF.getTag(this, "GPSLatitude");
+                const lon = EXIF.getTag(this, "GPSLongitude");
+                const latRef = EXIF.getTag(this, "GPSLatitudeRef");
+                const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
+
+                if (lat && lon && latRef && lonRef) {
+                    const location = {
+                        latitude: (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1),
+                        longitude: (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1),
+                    };
+                    getReverseGeocodingData(location.latitude, location.longitude)
+                        .then(geocoding => {
+                            location.geocoding = geocoding;
+                            resolve(location);
+                        })
+                        .catch(error => {
+                            reject(error);
+                        });
+                } else {
+                    console.log('No GPS data found for file:', file.name);
+                    resolve(null);
+                }
+            });
+        });
+    }
+
+    function getReverseGeocodingData(lat, lng) {
+        return new Promise((resolve, reject) => {
+            const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+            fetch(url, {headers: {
+                    'Referer': 'http://kyrremann.no/plog',
+                    'User-Agent': 'Plog/1.0 (kyrremann@gmail.com)'
+                }
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data && data.address) {
+                        const { suburb, city, municipality, country } = data.address;
+                        resolve({ suburb, city, municipality, country });
+                    } else {
+                        resolve(null);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error with reverse geocoding:', error);
+                    reject(error);
+                });
+        });
+    }
+
+    const form = document.getElementById("uploadForm");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (resizedImageDataUrls.length === 0) {
+            alert('Please select at least one image to upload');
+            return;
+        }
+
+        document.getElementById('resizedImageInput').value = JSON.stringify(resizedImageDataUrls);
+        const imagesInput = document.getElementById('images');
+        imagesInput.parentNode.removeChild(imagesInput);
+        form.submit();
+    });
+</script>
+</body>
+</html>
