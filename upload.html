@@ -9,6 +9,7 @@
 </head>
 <body>
 <div id="app"></div>
+<!-- <form action="https://kyrremannnoutglbbgy-plog-upload.functions.fnc.nl-ams.scw.cloud/post" id="uploadForm" method="POST"> -->
 <form action="http://localhost:8080/post" id="uploadForm" method="POST">
     <label for="title">Tittel</label>
     <br>
@@ -35,6 +36,7 @@
     <br>
     <input type="submit" value="Submit">
 </form>
+<!-- <img id="image" src="https://kyrremann-plog.s3-website.nl-ams.scw.cloud/monster.png" /> -->
 
 <script>
     const resizedImageDataUrls = [];
@@ -178,7 +180,8 @@
     function getReverseGeocodingData(lat, lng) {
         return new Promise((resolve, reject) => {
             const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-            fetch(url, {headers: {
+            fetch(url, {
+                headers: {
                     'Referer': 'http://kyrremann.no/plog',
                     'User-Agent': 'Plog/1.0 (kyrremann@gmail.com)'
                 }
@@ -186,8 +189,8 @@
                 .then(response => response.json())
                 .then(data => {
                     if (data && data.address) {
-                        const { suburb, city, municipality, country } = data.address;
-                        resolve({ suburb, city, municipality, country });
+                        const {suburb, city, municipality, country} = data.address;
+                        resolve({suburb, city, municipality, country});
                     } else {
                         resolve(null);
                     }
