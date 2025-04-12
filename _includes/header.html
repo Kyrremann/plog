@@ -9,7 +9,7 @@
     <a href="feed.xml" class="menu-link" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
   </nav>
   <div class="dropdown">
-    <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+    <button class="dropbtn" onclick="menuToggle()"><i class="fa fa-bars" aria-hidden="true"></i></button>
     <div class="dropdown-content">
       {% for item in site.menu %}
         <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
@@ -17,4 +17,15 @@
       <a href="feed.xml" class="menu-link" target="_blank"><i class="fa fa-rss-square" aria-hidden="true"></i></a>
     </div>
   </div>
+  <script>
+    function menuToggle() {
+      var menu = document.getElementsByClassName('dropdown-content');
+      console.log(menu);
+      if (menu[0].style.display === "block") {
+        menu[0].style.display = "none";
+      } else {
+        menu[0].style.display = "block";
+      }
+    }
+  </script>
 </header>
