@@ -8,21 +8,13 @@
   color: #9a9a9a;
   font-size:0.8rem;
 }
-.featured-image img {
-  align-content: center;
-  margin: 5px auto 25px;
-  display: block;
-  max-width: 1080px;
-}
 @media (max-width: $container-width) {
   .post-content {
     width: 60vw;
     display: block;
   }
-  .featured-image img {
-    align-content: center;
+  img {
     margin: 5px auto 25px;
-    display: block;
     max-width: 60vw;
   }
 }
@@ -31,10 +23,8 @@
     width: 95vw;
     display: block;
   }
-  .featured-image img {
-    align-content: center;
+  img {
     margin: 5px auto 25px;
-    display: block;
     max-width: 95vw;
   }
 }
