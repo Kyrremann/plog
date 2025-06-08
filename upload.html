@@ -1,221 +1,312 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Plog</title>
-    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-</head>
-<body>
+---
+layout: upload
+title: New post
+---
+
 <div id="app"></div>
 <!-- <form action="https://kyrremannnoutglbbgy-plog-upload.functions.fnc.nl-ams.scw.cloud/post" id="uploadForm" method="POST"> -->
-<form action="http://localhost:8080/post" id="uploadForm" method="POST">
-    <label for="title">Tittel</label>
-    <br>
-    <input id="title" name="title" type="text" value="Tittel på post">
-    <br>
-    <label for="description">Beskrivelse</label>
-    <br>
-    <textarea autocomplete="off" id="description" name="description" placeholder="e.g. Hello my name is Alex" rows="10"
-              spellcheck="true" wrap="soft">Hello Rust</textarea>
-    <br>
-    <label for="date">Dato</label>
-    <input id="date" name="date" type="date"/>
-    <br>
-    <div>
-        <label for="images">Bilder</label>
-        <input accept="image/*" id="images" multiple name="images" type="file"/>
-        <input id="resizedImageInput" name="resizedImages" type="hidden">
-    </div>
-    <div class="preview">
-        <p>No files currently selected for upload</p>
-    </div>
-    <br>
-    <canvas id="canvas" style="display:none;"></canvas>
-    <br>
+  <form action="http://localhost:8080/post" id="uploadForm" method="POST" enctype="multipart/form-data">
+    <p>
+      <label for="title">Tittel</label>
+      <br>
+      <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="Bikepacking Shikoku, Japan: Day 20">
+    </p>
+    <p>
+      <label for="categories">Kategorier</label>
+      <br>
+      <input id="categories" name="categories" type="text" placeholder="Kommaseparert liste" style="width: 100%; box-sizing: border-box;" value="bikepacking, japan">
+    </p>
+    <p>
+      <label for="description">Beskrivelse</label>
+      <br>
+      <textarea autocomplete="off" id="description" name="description" placeholder="I dag syklet jeg fra..." rows="10"
+                spellcheck="true" wrap="soft" style="width: 100%; box-sizing: border-box;">
+Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 1200km og 11000 høydemeter! Vært en flott tur, men mange fine opplevelser. Shikoku er en fin øy som jeg virkelig kan anbefale!</textarea>
+    </p>
+    <p>
+      <label for="date">Dato</label>
+      <input id="date" name="date" type="date"/>
+    </p>
+    <p>
+      <input id="my-pond" type="file" class="my-pond" name="filepond"/>
+    </p>
+    <p id="filepondDescription"></p>
     <input type="submit" value="Submit">
-</form>
-<!-- <img id="image" src="https://kyrremann-plog.s3-website.nl-ams.scw.cloud/monster.png" /> -->
+  </form>
 
-<script>
-    const resizedImageDataUrls = [];
-    const input = document.getElementById("images");
+  <br />
+  <hr />
+  <br />
+  <h1 id="previewTitle">Preview</h1>
+  <span class="post-date">
+    Written on <span id="previewDate">April 26th, 2024</span> by Kyrre Havik
+  </span>
+  <article>
+    <p id="previewDescription"></p>
+    <div id="preview">
+    </div>
+  </article>
 
-    document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('date').valueAsDate = new Date();
+  <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+  <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
 
-        input.style.opacity = "0";
-        input.addEventListener("change", updateImageDisplay);
+  <script>
+    // Get a reference to the file input element
+    const pondElement = document.getElementById('my-pond');
+
+    // Register the plugins
+    FilePond.registerPlugin(FilePondPluginImageExifOrientation);
+    FilePond.registerPlugin(FilePondPluginImageTransform);
+    FilePond.registerPlugin(FilePondPluginImageResize);
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+
+    // Create a FilePond instance
+    const pond = FilePond.create(pondElement);
+    pond.allowMultiple = true;
+    pond.itemInsertLocation = 'after';
+    pond.storeAsFile = true;
+    pond.instantUpload = false;
+    pond.imageResizeTargetWidth = 1440;
+    pond.imageResizeMode = 'contain';
+
+    pond.imageTransformOutputQuality = 75;
+    pond.imageTransformOutputStripImageHead = false;
+
+    pond.on('addfile', (error, file) => {
+      if (error) {
+        console.log('Oh no: ', error);
+        return;
+      }
+
+      previewFiles(file);
     });
 
-    function updateImageDisplay() {
-        const preview = document.querySelector(".preview");
-        while (preview.firstChild) {
-            preview.removeChild(preview.firstChild);
-        }
+    pond.on('removefile', (error, file) => {
+      if (error) {
+        console.log('Oh no: ', error);
+        return;
+      }
 
-        const curFiles = input.files;
-        if (curFiles.length === 0) {
-            const para = document.createElement("p");
-            para.textContent = "No files currently selected for upload";
-            preview.appendChild(para);
-        } else {
-            const list = document.createElement("ol");
-            preview.appendChild(list);
+      let element = document.getElementById('form_' + file.filename);
+      if (element) {
+        element.remove();
+      }
 
-            for (const file of curFiles) {
-                resizeImage(file, 1015, 1350, async function (blob) {
-                    try {
-                        const location = await getLocationInfo(file);
-                        resizedImageDataUrls.push({
-                            filename: file.name,
-                            dataUrl: blob.data,
-                            location: location,
-                        });
+      element = document.getElementById('preview_' + file.filename);
+      if (element) {
+        element.remove();
+      }
+    });
+  </script>
 
-                        const listItem = document.createElement("li");
-                        const image = document.createElement("img");
-                        const para = document.createElement("p");
+  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+  <script>
+    const title = document.getElementById("title"); 
+    const date = document.getElementById("date");
+    const description = document.getElementById("description");
+    let geoLocationDataUrls = [];
 
-                        image.alt = image.title = file.name;
-                        image.src = URL.createObjectURL(blob.img);
+    document.addEventListener('DOMContentLoaded', () => {
+      date.addEventListener('input', () => {
+        const dateValue = new Date(date.value);
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById("previewDate").textContent = dateValue.toLocaleDateString('en', options);
+      });
+      date.valueAsDate = new Date();
+      date.dispatchEvent(new Event('input'));
 
-                        para.innerText = `File name ${file.name}.`;
-                        if (location) {
-                            para.innerText += `\nLatitude: ${location.latitude}, Longitude: ${location.longitude}`;
+      title.addEventListener('input', () => {
+        document.getElementById("previewTitle").textContent = title.value || 'Preview';
+      });
+      title.dispatchEvent(new Event('input'));
 
-                            if (location.geocoding) {
-                                const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
-                                para.innerText += `\nLocation: ${locationName}`;
-                            } else {
-                                para.innerText += '\nLocation not found';
-                            }
-                        } else {
-                            para.innerText += '\nNo GPS data found';
-                        }
+      description.addEventListener('input', () => {
+        document.getElementById("previewDescription").textContent = description.value || 'Preview';
+      });
+      description.dispatchEvent(new Event('input'));
+    });
 
-                        listItem.appendChild(image);
-                        listItem.appendChild(para);
-
-                        list.appendChild(listItem);
-                    } catch (error) {
-                        console.error('Error getting location info:', error);
-                    }
-                });
-            }
-        }
+    function previewFiles(event) {
+      const filepondDescription = document.getElementById("filepondDescription");
+      const preview = document.getElementById("preview");
+      readAndPreview(filepondDescription, preview, event.file);
     }
 
-    function resizeImage(file, maxWidth, maxHeight, callback) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            const img = new Image();
-            img.onload = function () {
-                const canvas = document.createElement('canvas');
-                const ctx = canvas.getContext('2d');
-                let width = img.width;
-                let height = img.height;
+    function readAndPreview(form, preview, file) {
+      // Image alt text
+      const div = document.createElement('div');
+      div.id = 'form_' + file.name;
 
-                // Calculate the new dimensions while maintaining the aspect ratio
-                if (width > height) {
-                    if (width > maxWidth) {
-                        height *= maxWidth / width;
-                        width = maxWidth;
-                    }
-                } else {
-                    if (height > maxHeight) {
-                        width *= maxHeight / height;
-                        height = maxHeight;
-                    }
-                }
+      const altText_label = document.createElement('label');
+      altText_label.textContent = 'Alt text for ' + file.name + ':';
+      altText_label.htmlFor = file.name + '_alt_text';
 
-                canvas.width = width;
-                canvas.height = height;
-                ctx.drawImage(img, 0, 0, width, height);
+      const altText = document.createElement('input');
+      altText.type = 'text';
+      altText.placeholder = 'Alt text for image';
+      altText.name = file.name + '_alt_text';
+      altText.value = "Alt text for image";
+      altText.style.width = '100%';
+      altText.style.boxSizing = 'border-box';
+      altText.addEventListener('input', () => {
+        const element = document.getElementById('preview_' + file.name + '_alt_text');
+        if (element) {
+          element.textContent = altText.value;
+        }
+      });
 
-                // Convert the canvas to a Blob and execute the callback
-                canvas.toBlob(function (blob) {
-                    const reader = new FileReader();
-                    reader.onloadend = function () {
-                        callback({img: blob, data: reader.result});
-                    };
-                    reader.readAsDataURL(blob);
-                }, 'image/jpeg');
-            };
-            img.src = e.target.result;
-        };
-        reader.readAsDataURL(file);
+      const altText_p = document.createElement('p');
+      altText_p.appendChild(altText_label);
+      altText_p.appendChild(altText);
+      div.appendChild(altText_p);
+
+      // Image description, aka paragraph between images
+      const description_label = document.createElement('label');
+      description_label.textContent = 'Description for ' + file.name + ':';
+      description_label.htmlFor = file.name + '_description';
+
+      const description = document.createElement('input');
+      description.id = file.name + '_description';
+      description.name = file.name + '_description';
+      description.type = 'text';
+      description.placeholder = 'Description';
+      description.value = file.name;
+      description.style.width = '100%';
+      description.style.boxSizing = 'border-box';
+      description.addEventListener('input', () => {
+        const element = document.getElementById('preview_' + file.name + '_description');
+        if (element) {
+          element.textContent = description.value;
+        }
+      });
+
+      const description_p = document.createElement('p');
+      description_p.appendChild(description_label);
+      description_p.appendChild(description);
+      div.appendChild(description_p);
+
+      form.appendChild(div);
+      
+      const reader = new FileReader();
+
+      reader.addEventListener(
+        "load",
+        async () => {
+          const image = new Image();
+          image.title = file.name;
+          image.alt = file.name;
+          image.src = reader.result;
+
+          const paragraph = document.createElement('p');
+          paragraph.id = 'preview_' + file.name;
+          paragraph.appendChild(image);
+          
+          try {
+            const location = await getLocationInfo(file);
+            const inner = document.createElement('p');
+            if (location) {
+              const innerHidden = document.createElement('input');
+              innerHidden.type = 'hidden';
+              innerHidden.name = file.name + '_location';
+              innerHidden.value = JSON.stringify(location);
+              form.appendChild(innerHidden);
+              inner.innerText = `\nLatitude: ${location.latitude}, Longitude: ${location.longitude}`;
+
+              if (location.geocoding) {
+                const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
+                inner.innerText += `\nLocation: ${locationName}`;
+              } else {
+                inner.innerText += '\nLocation not found';
+              }
+
+              await new Promise(r => setTimeout(r, 1000));
+            } else {
+              inner.innerText += 'No GPS data found';
+            }
+
+            paragraph.appendChild(inner);
+          } catch (error) {
+            console.error('Error getting location info:', error);
+          }
+
+          desc_preview = document.createElement('p');
+          desc_preview.id = 'preview_' + file.name + '_description';
+          desc_preview.textContent = description.value || file.name;
+
+          alt_preview = document.createElement('p');
+          alt_preview.id = 'preview_' + file.name + '_alt_text';
+          alt_preview.textContent = altText.value || "Alt text for image";
+          
+          paragraph.appendChild(alt_preview);
+          paragraph.appendChild(desc_preview);
+          preview.appendChild(paragraph);
+
+          geoLocationDataUrls.push({
+            filename: file.name,
+            dataUrl: reader.result,
+            location: location,
+          });
+        },
+        false,
+      );
+
+      reader.readAsDataURL(file);
     }
 
     function getLocationInfo(file) {
-        return new Promise((resolve, reject) => {
-            EXIF.getData(file, function () {
-                const lat = EXIF.getTag(this, "GPSLatitude");
-                const lon = EXIF.getTag(this, "GPSLongitude");
-                const latRef = EXIF.getTag(this, "GPSLatitudeRef");
-                const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
+      return new Promise((resolve, reject) => {
+        EXIF.getData(file, function () {
+          const lat = EXIF.getTag(this, "GPSLatitude");
+          const lon = EXIF.getTag(this, "GPSLongitude");
+          const latRef = EXIF.getTag(this, "GPSLatitudeRef");
+          const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
 
-                if (lat && lon && latRef && lonRef) {
-                    const location = {
-                        latitude: (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1),
-                        longitude: (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1),
-                    };
-                    getReverseGeocodingData(location.latitude, location.longitude)
-                        .then(geocoding => {
-                            location.geocoding = geocoding;
-                            resolve(location);
-                        })
-                        .catch(error => {
-                            reject(error);
-                        });
-                } else {
-                    console.log('No GPS data found for file:', file.name);
-                    resolve(null);
-                }
-            });
+          if (lat && lon && latRef && lonRef) {
+            const location = {
+              latitude: (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1),
+              longitude: (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1),
+            };
+            getReverseGeocodingData(location.latitude, location.longitude)
+              .then(geocoding => {
+                location.geocoding = geocoding;
+                resolve(location);
+              })
+              .catch(error => {
+                reject(error);
+              });
+          } else {
+            console.log('No GPS data found for file:', file.name);
+            resolve(null);
+          }
         });
+      });
     }
 
     function getReverseGeocodingData(lat, lng) {
-        return new Promise((resolve, reject) => {
-            const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-            fetch(url, {
-                headers: {
-                    'Referer': 'http://kyrremann.no/plog',
-                    'User-Agent': 'Plog/1.0 (kyrremann@gmail.com)'
-                }
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data && data.address) {
-                        const {suburb, city, municipality, country} = data.address;
-                        resolve({suburb, city, municipality, country});
-                    } else {
-                        resolve(null);
-                    }
-                })
-                .catch(error => {
-                    console.error('Error with reverse geocoding:', error);
-                    reject(error);
-                });
-        });
+      return new Promise((resolve, reject) => {
+        const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+        fetch(url, {
+          headers: {
+            'Referer': 'http://kyrremann.no/plog',
+            'User-Agent': 'Plog/1.0 - kyrremann'
+          }
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data && data.address) {
+              const {suburb, city, municipality, country} = data.address;
+              resolve({suburb, city, municipality, country});
+            } else {
+              resolve(null);
+            }
+          })
+          .catch(error => {
+            console.error('Error with reverse geocoding:', error);
+            reject(error);
+          });
+      });
     }
-
-    const form = document.getElementById("uploadForm");
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (resizedImageDataUrls.length === 0) {
-            alert('Please select at least one image to upload');
-            return;
-        }
-
-        document.getElementById('resizedImageInput').value = JSON.stringify(resizedImageDataUrls);
-        const imagesInput = document.getElementById('images');
-        imagesInput.parentNode.removeChild(imagesInput);
-        form.submit();
-    });
-</script>
-</body>
-</html>
+  </script>
