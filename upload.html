@@ -12,20 +12,19 @@ title: New post
       <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="Bikepacking Shikoku, Japan: Day 20">
     </p>
     <p>
+      <label for="date">Dato</label>
+      <br>
+      <input id="date" name="date" type="date"/>
+    </p>
+    <p>
       <label for="categories">Kategorier</label>
       <br>
       <input id="categories" name="categories" type="text" placeholder="Kommaseparert liste" style="width: 100%; box-sizing: border-box;" value="bikepacking, japan">
     </p>
     <p>
-      <label for="description">Beskrivelse</label>
+      <label for="strava">Strava</label>
       <br>
-      <textarea autocomplete="off" id="description" name="description" placeholder="I dag syklet jeg fra..." rows="10"
-                spellcheck="true" wrap="soft" style="width: 100%; box-sizing: border-box;">
-Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 1200km og 11000 høydemeter! Vært en flott tur, men mange fine opplevelser. Shikoku er en fin øy som jeg virkelig kan anbefale!</textarea>
-    </p>
-    <p>
-      <label for="date">Dato</label>
-      <input id="date" name="date" type="date"/>
+      <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="https://www.strava.com/activities/1010101010">
     </p>
     <p>
       <input id="my-pond" type="file" class="my-pond" name="filepond"/>
@@ -34,14 +33,15 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
     <input type="submit" value="Submit">
   </form>
 
-  <br />
-  <hr />
-  <br />
+  <br>
+  <hr>
+  <br>
   <h1 id="previewTitle">Preview</h1>
   <span class="post-date">
     Written on <span id="previewDate">April 26th, 2024</span> by Kyrre Havik
   </span>
   <article>
+    <p><a id="previewStrava" href="">Strava activiy</a></p>
     <p id="previewDescription"></p>
     <div id="preview">
     </div>
@@ -104,9 +104,9 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
 
   <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
   <script>
-    const title = document.getElementById("title"); 
+    const title = document.getElementById("title");
     const date = document.getElementById("date");
-    const description = document.getElementById("description");
+    const strava = document.getElementById("strava");
     let geoLocationDataUrls = [];
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -123,10 +123,10 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
       });
       title.dispatchEvent(new Event('input'));
 
-      description.addEventListener('input', () => {
-        document.getElementById("previewDescription").textContent = description.value || 'Preview';
+      strava.addEventListener('input', () => {
+        document.getElementById("previewStrava").href = strava.value || 'Preview';
       });
-      description.dispatchEvent(new Event('input'));
+      strava.dispatchEvent(new Event('input'));
     });
 
     function previewFiles(event) {
@@ -136,7 +136,6 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
     }
 
     function readAndPreview(form, preview, file) {
-      // Image alt text
       const div = document.createElement('div');
       div.id = 'form_' + file.name;
 
@@ -152,9 +151,9 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
       altText.style.width = '100%';
       altText.style.boxSizing = 'border-box';
       altText.addEventListener('input', () => {
-        const element = document.getElementById('preview_' + file.name + '_alt_text');
+        const element = document.getElementById('preview_' + file.name + '_image');
         if (element) {
-          element.textContent = altText.value;
+          element.alt = altText.value;
         }
       });
 
@@ -163,19 +162,47 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
       altText_p.appendChild(altText);
       div.appendChild(altText_p);
 
+      // Caption for the image
+      const caption_label = document.createElement('label');
+      caption_label.textContent = 'Caption for ' + file.name + ':';
+      caption_label.htmlFor = file.name + '_caption';
+
+      const caption = document.createElement('input');
+      caption.type = 'text';
+      caption.id = file.name + '_caption';
+      caption.name = file.name + '_caption';
+      caption.placeholder = 'Caption for image';
+      caption.style.width = '100%';
+      caption.style.boxSizing = 'border-box';
+      caption.value = "Bikepacking Shikoku, Japan: Day 20";
+      caption.addEventListener('input', () => {
+        const element = document.getElementById('preview_' + file.name + '_caption');
+        if (element) {
+          element.textContent = caption.value;
+        }
+      });
+
+      const caption_p = document.createElement('p');
+      caption_p.appendChild(caption_label);
+      caption_p.appendChild(caption);
+      div.appendChild(caption_p);
+
       // Image description, aka paragraph between images
       const description_label = document.createElement('label');
       description_label.textContent = 'Description for ' + file.name + ':';
       description_label.htmlFor = file.name + '_description';
 
-      const description = document.createElement('input');
+      const description = document.createElement('textarea');
       description.id = file.name + '_description';
       description.name = file.name + '_description';
-      description.type = 'text';
-      description.placeholder = 'Description';
-      description.value = file.name;
+      description.placeholder = 'I dag syklet jeg fra...';
+      description.rows = 10
+      description.autocomplete = 'off';
+      description.spellcheck = true;
+      description.wrap = 'soft';
       description.style.width = '100%';
       description.style.boxSizing = 'border-box';
+      description.value = "Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 1200km og 11000 høydemeter! Vært en flott tur, men mange fine opplevelser. Shikoku er en fin øy som jeg virkelig kan anbefale!";
       description.addEventListener('input', () => {
         const element = document.getElementById('preview_' + file.name + '_description');
         if (element) {
@@ -189,45 +216,56 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
       div.appendChild(description_p);
 
       form.appendChild(div);
-      
+
       const reader = new FileReader();
 
       reader.addEventListener(
         "load",
         async () => {
           const image = new Image();
-          image.title = file.name;
+          image.id = 'preview_' + file.name + '_image';
           image.alt = file.name;
           image.src = reader.result;
 
           const paragraph = document.createElement('p');
           paragraph.id = 'preview_' + file.name;
           paragraph.appendChild(image);
-          
+
           try {
             const location = await getLocationInfo(file);
-            const inner = document.createElement('p');
+            const caption_element = document.createElement('em');
+
             if (location) {
-              const innerHidden = document.createElement('input');
-              innerHidden.type = 'hidden';
-              innerHidden.name = file.name + '_location';
-              innerHidden.value = JSON.stringify(location);
-              form.appendChild(innerHidden);
-              inner.innerText = `\nLatitude: ${location.latitude}, Longitude: ${location.longitude}`;
+              const hiddenLocation = document.createElement('input');
+              hiddenLocation.type = 'hidden';
+              hiddenLocation.name = file.name + '_location';
+              hiddenLocation.value = JSON.stringify(location);
+              form.appendChild(hiddenLocation);
+
+              const a = document.createElement('a');
+              a.href = `https://www.openstreetmap.org/?mlat=${location.latitude}&mlon=${location.longitude}`;
+              caption_element.appendChild(a);
 
               if (location.geocoding) {
                 const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
-                inner.innerText += `\nLocation: ${locationName}`;
+                a.textContent = locationName;
               } else {
-                inner.innerText += '\nLocation not found';
+                a.textContent = "View on OpenStreetMap";
               }
 
               await new Promise(r => setTimeout(r, 1000));
             } else {
-              inner.innerText += 'No GPS data found';
+              caption_element.appendChild(document.createTextNode('No location data available'));
             }
 
-            paragraph.appendChild(inner);
+            caption_element.appendChild(document.createTextNode(': '));
+
+            caption_preview = document.createElement('span');
+            caption_preview.id = 'preview_' + file.name + '_caption';
+            caption_preview.textContent = caption.value || file.name;
+            caption_element.appendChild(caption_preview);
+
+            paragraph.appendChild(caption_element);
           } catch (error) {
             console.error('Error getting location info:', error);
           }
@@ -235,13 +273,8 @@ Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 120
           desc_preview = document.createElement('p');
           desc_preview.id = 'preview_' + file.name + '_description';
           desc_preview.textContent = description.value || file.name;
-
-          alt_preview = document.createElement('p');
-          alt_preview.id = 'preview_' + file.name + '_alt_text';
-          alt_preview.textContent = altText.value || "Alt text for image";
-          
-          paragraph.appendChild(alt_preview);
           paragraph.appendChild(desc_preview);
+
           preview.appendChild(paragraph);
 
           geoLocationDataUrls.push({
