@@ -22,6 +22,14 @@ title: New post
       <input id="categories" name="categories" type="text" placeholder="Kommaseparert liste" style="width: 100%; box-sizing: border-box;" value="bikepacking, japan">
     </p>
     <p>
+      <label for="token">Token</label>
+      <br>
+      <input type="password" name="token" id="token" required="required" style="width: 100%; box-sizing: border-box;">
+      <label for="toggle-token">
+        <input id="toggle-token" onclick="toggleToken()" type="checkbox" style="box-sizing: border-box;"> Show Password
+      </label>
+    </p>
+    <p>
       <label for="strava">Strava</label>
       <br>
       <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="https://www.strava.com/activities/1010101010">
@@ -348,5 +356,14 @@ title: New post
             reject(error);
           });
       });
+    }
+
+    function toggleToken() {
+      var token = document.getElementById("token");
+      if (token.type === "password") {
+        token.type = "text";
+      } else {
+        token.type = "password";
+      }
     }
   </script>
