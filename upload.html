@@ -99,6 +99,11 @@ title: New post
       if (element) {
         element.remove();
       }
+
+      element = document.getElementById('form_' + file.filename + '_location');
+      if (element) {
+        element.remove();
+      }
     });
   </script>
 
@@ -238,6 +243,7 @@ title: New post
             if (location) {
               const hiddenLocation = document.createElement('input');
               hiddenLocation.type = 'hidden';
+              hiddenLocation.id = 'form_' + file.name + '_location';
               hiddenLocation.name = file.name + '_location';
               hiddenLocation.value = JSON.stringify(location);
               form.appendChild(hiddenLocation);
