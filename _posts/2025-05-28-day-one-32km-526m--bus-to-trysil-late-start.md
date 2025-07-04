@@ -23,6 +23,3 @@ I managed to reach my shelter for the night not long before it started raining, 
 
 ![My cooking equipment with the sun setting behind it.](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250528_214304.jpg)
 *[Trysil, Norge](https://www.google.com/maps/place/61.16075479972222,11.930018099722222): The dinner was luckily served before the rain arrived.*
-
-![]()
-*[Vågå, Norge](https://www.google.com/maps/place/61.464552699722226,8.8083106): *
