@@ -150,6 +150,25 @@ title: New post
     const div = document.createElement('div');
     div.id = 'form_' + file.name;
 
+    const div_img_textbox = document.createElement('div');
+    div_img_textbox.style.display = 'flex';
+    div.appendChild(div_img_textbox);
+
+    const div_image = document.createElement('div');
+    div_image.style.alignContent = 'center';
+    div_image.style.paddingRight = '1em';
+    div_img_textbox.appendChild(div_image);
+
+    const thumbnail = new Image();
+    thumbnail.id = 'thumbnail_' + file.name;
+    thumbnail.style.width = '100px';
+    div_image.appendChild(thumbnail);
+
+    const div_textbox = document.createElement('div');
+    div_textbox.style.alignContent = 'space-between';
+    div_textbox.style.width = '100%';
+    div_img_textbox.appendChild(div_textbox);
+
     const altText_label = document.createElement('label');
     altText_label.textContent = 'Alt text for ' + file.name + ':';
     altText_label.htmlFor = file.name + '_alt_text';
@@ -170,7 +189,7 @@ title: New post
     const altText_p = document.createElement('p');
     altText_p.appendChild(altText_label);
     altText_p.appendChild(altText);
-    div.appendChild(altText_p);
+    div_textbox.appendChild(altText_p);
 
     // Caption for the image
     const caption_label = document.createElement('label');
@@ -195,7 +214,7 @@ title: New post
     const caption_p = document.createElement('p');
     caption_p.appendChild(caption_label);
     caption_p.appendChild(caption);
-    div.appendChild(caption_p);
+    div_textbox.appendChild(caption_p);
 
     // Image description, aka paragraph between images
     const description_label = document.createElement('label');
@@ -237,6 +256,11 @@ title: New post
         image.id = 'preview_' + file.name + '_image';
         image.alt = file.name;
         image.src = reader.result;
+
+        const thumbnail_image = document.getElementById('thumbnail_' + file.name);
+        if (thumbnail_image) {
+          thumbnail_image.src = reader.result;
+        }
 
         const paragraph = document.createElement('p');
         paragraph.id = 'preview_' + file.name;
