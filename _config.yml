@@ -22,10 +22,10 @@ plugins:
 # Customized settings
 post_date_prefix: Written on
 menu:
-- name: Bikepacking
-  url: bikepacking
 - name: Japan
   url: japan
+- name: Norway
+  url: norway
 - name: About
   url: about
 pagination:
