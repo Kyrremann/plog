@@ -3,365 +3,364 @@ layout: upload
 title: New post
 ---
 
-<div id="app"></div>
 <form action="https://kyrremannnoutglbbgy-plog-upload.functions.fnc.nl-ams.scw.cloud/post" id="uploadForm" method="POST"  enctype="multipart/form-data">
-    <p>
-      <label for="title">Tittel</label>
-      <br>
-      <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="">
-    </p>
-    <p>
-      <label for="date">Dato</label>
-      <br>
-      <input id="date" name="date" type="date"/>
-    </p>
-    <p>
-      <label for="categories">Kategorier</label>
-      <br>
-      <input id="categories" name="categories" type="text" placeholder="Liste med mellomrom" style="width: 100%; box-sizing: border-box;" value="bikepacking japan">
-    </p>
-    <p>
-      <label for="token">Token</label>
-      <br>
-      <input type="password" name="token" id="token" required="required" style="width: 100%; box-sizing: border-box;">
-      <label for="toggle-token">
-        <input id="toggle-token" onclick="toggleToken()" type="checkbox" style="box-sizing: border-box;"> Show Password
-      </label>
-    </p>
-    <p>
-      <label for="strava">Strava</label>
-      <br>
-      <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="">
-    </p>
-    <p>
-      <input id="my-pond" type="file" class="my-pond" name="filepond"/>
-    </p>
-    <p id="filepondDescription"></p>
-    <input type="submit" value="Submit">
-  </form>
+  <p>
+    <label for="title">Tittel</label>
+    <br>
+    <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="">
+  </p>
+  <p>
+    <label for="date">Dato</label>
+    <br>
+    <input id="date" name="date" type="date"/>
+  </p>
+  <p>
+    <label for="categories">Kategorier</label>
+    <br>
+    <input id="categories" name="categories" type="text" placeholder="Liste med mellomrom" style="width: 100%; box-sizing: border-box;" value="bikepacking japan">
+  </p>
+  <p>
+    <label for="token">Token</label>
+    <br>
+    <input type="password" name="token" id="token" required="required" style="width: 100%; box-sizing: border-box;">
+    <label for="toggle-token">
+      <input id="toggle-token" onclick="toggleToken()" type="checkbox" style="box-sizing: border-box;"> Show Password
+    </label>
+  </p>
+  <p>
+    <label for="strava">Strava</label>
+    <br>
+    <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="">
+  </p>
+  <p>
+    <input id="my-pond" type="file" class="my-pond" name="filepond"/>
+  </p>
+  <p id="filepondDescription"></p>
+  <input type="submit" value="Submit">
+</form>
 
-  <br>
-  <hr>
-  <br>
-  <h1 id="previewTitle">Preview</h1>
-  <span class="post-date">
-    Written on <span id="previewDate"></span> by Kyrre Havik
-  </span>
-  <article>
-    <p><a id="previewStrava" href="">Strava activiy</a></p>
-    <p id="previewDescription"></p>
-    <div id="preview">
-    </div>
-  </article>
+<br>
+<hr>
+<br>
+<h1 id="previewTitle">Preview</h1>
+<span class="post-date">
+  Written on <span id="previewDate"></span> by Kyrre Havik
+</span>
+<article>
+  <p><a id="previewStrava" href="">Strava activiy</a></p>
+  <p id="previewDescription"></p>
+  <div id="preview">
+  </div>
+</article>
 
-  <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
-  <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+<script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
+<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
 
-  <script>
-    // Get a reference to the file input element
-    const pondElement = document.getElementById('my-pond');
+<script>
+  // Get a reference to the file input element
+  const pondElement = document.getElementById('my-pond');
 
-    // Register the plugins
-    FilePond.registerPlugin(FilePondPluginImageExifOrientation);
-    FilePond.registerPlugin(FilePondPluginImageTransform);
-    FilePond.registerPlugin(FilePondPluginImageResize);
-    FilePond.registerPlugin(FilePondPluginImagePreview);
+  // Register the plugins
+  FilePond.registerPlugin(FilePondPluginImageExifOrientation);
+  FilePond.registerPlugin(FilePondPluginImageTransform);
+  FilePond.registerPlugin(FilePondPluginImageResize);
+  FilePond.registerPlugin(FilePondPluginImagePreview);
 
-    // Create a FilePond instance
-    const pond = FilePond.create(pondElement);
-    pond.allowMultiple = true;
-    pond.itemInsertLocation = 'after';
-    pond.storeAsFile = true;
-    pond.instantUpload = false;
-    pond.imageResizeTargetWidth = 1440;
-    pond.imageResizeMode = 'contain';
+  // Create a FilePond instance
+  const pond = FilePond.create(pondElement);
+  pond.allowMultiple = true;
+  pond.itemInsertLocation = 'after';
+  pond.storeAsFile = true;
+  pond.instantUpload = false;
+  pond.imageResizeTargetWidth = 1440;
+  pond.imageResizeMode = 'contain';
 
-    pond.imageTransformOutputQuality = 75;
-    pond.imageTransformOutputStripImageHead = false;
+  pond.imageTransformOutputQuality = 75;
+  pond.imageTransformOutputStripImageHead = false;
 
-    pond.on('addfile', (error, file) => {
-      if (error) {
-        console.log('Oh no: ', error);
-        return;
-      }
-
-      previewFiles(file);
-    });
-
-    pond.on('removefile', (error, file) => {
-      if (error) {
-        console.log('Oh no: ', error);
-        return;
-      }
-
-      let element = document.getElementById('form_' + file.filename);
-      if (element) {
-        element.remove();
-      }
-
-      element = document.getElementById('preview_' + file.filename);
-      if (element) {
-        element.remove();
-      }
-
-      element = document.getElementById('form_' + file.filename + '_location');
-      if (element) {
-        element.remove();
-      }
-    });
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-  <script>
-    const title = document.getElementById("title");
-    const date = document.getElementById("date");
-    const strava = document.getElementById("strava");
-    let geoLocationDataUrls = [];
-
-    document.addEventListener('DOMContentLoaded', () => {
-      date.addEventListener('input', () => {
-        const dateValue = new Date(date.value);
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        document.getElementById("previewDate").textContent = dateValue.toLocaleDateString('en', options);
-      });
-      date.valueAsDate = new Date();
-      date.dispatchEvent(new Event('input'));
-
-      title.addEventListener('input', () => {
-        document.getElementById("previewTitle").textContent = title.value || 'Preview';
-      });
-      title.dispatchEvent(new Event('input'));
-
-      strava.addEventListener('input', () => {
-        document.getElementById("previewStrava").href = strava.value || 'Preview';
-      });
-      strava.dispatchEvent(new Event('input'));
-    });
-
-    function previewFiles(event) {
-      const filepondDescription = document.getElementById("filepondDescription");
-      const preview = document.getElementById("preview");
-      readAndPreview(filepondDescription, preview, event.file);
+  pond.on('addfile', (error, file) => {
+    if (error) {
+      console.log('Oh no: ', error);
+      return;
     }
 
-    function readAndPreview(form, preview, file) {
-      const div = document.createElement('div');
-      div.id = 'form_' + file.name;
+    previewFiles(file);
+  });
 
-      const altText_label = document.createElement('label');
-      altText_label.textContent = 'Alt text for ' + file.name + ':';
-      altText_label.htmlFor = file.name + '_alt_text';
+  pond.on('removefile', (error, file) => {
+    if (error) {
+      console.log('Oh no: ', error);
+      return;
+    }
 
-      const altText = document.createElement('input');
-      altText.type = 'text';
-      altText.placeholder = 'Alt text for image';
-      altText.name = file.name + '_alt_text';
-      altText.style.width = '100%';
-      altText.style.boxSizing = 'border-box';
-      altText.addEventListener('input', () => {
-        const element = document.getElementById('preview_' + file.name + '_image');
-        if (element) {
-          element.alt = altText.value;
-        }
-      });
+    let element = document.getElementById('form_' + file.filename);
+    if (element) {
+      element.remove();
+    }
 
-      const altText_p = document.createElement('p');
-      altText_p.appendChild(altText_label);
-      altText_p.appendChild(altText);
-      div.appendChild(altText_p);
+    element = document.getElementById('preview_' + file.filename);
+    if (element) {
+      element.remove();
+    }
 
-      // Caption for the image
-      const caption_label = document.createElement('label');
-      caption_label.textContent = 'Caption for ' + file.name + ':';
-      caption_label.htmlFor = file.name + '_caption';
+    element = document.getElementById('form_' + file.filename + '_location');
+    if (element) {
+      element.remove();
+    }
+  });
+</script>
 
-      const caption = document.createElement('input');
-      caption.type = 'text';
-      caption.id = file.name + '_caption';
-      caption.name = file.name + '_caption';
-      caption.placeholder = 'Caption for image';
-      caption.style.width = '100%';
-      caption.style.boxSizing = 'border-box';
+<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+<script>
+  const title = document.getElementById("title");
+  const date = document.getElementById("date");
+  const strava = document.getElementById("strava");
+  let geoLocationDataUrls = [];
 
-      caption.addEventListener('input', () => {
-        const element = document.getElementById('preview_' + file.name + '_caption');
-        if (element) {
-          element.textContent = caption.value;
-        }
-      });
+  document.addEventListener('DOMContentLoaded', () => {
+    date.addEventListener('input', () => {
+      const dateValue = new Date(date.value);
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById("previewDate").textContent = dateValue.toLocaleDateString('en', options);
+    });
+    date.valueAsDate = new Date();
+    date.dispatchEvent(new Event('input'));
 
-      const caption_p = document.createElement('p');
-      caption_p.appendChild(caption_label);
-      caption_p.appendChild(caption);
-      div.appendChild(caption_p);
+    title.addEventListener('input', () => {
+      document.getElementById("previewTitle").textContent = title.value || 'Preview';
+    });
+    title.dispatchEvent(new Event('input'));
 
-      // Image description, aka paragraph between images
-      const description_label = document.createElement('label');
-      description_label.textContent = 'Description for ' + file.name + ':';
-      description_label.htmlFor = file.name + '_description';
+    strava.addEventListener('input', () => {
+      document.getElementById("previewStrava").href = strava.value || 'Preview';
+    });
+    strava.dispatchEvent(new Event('input'));
+  });
 
-      const description = document.createElement('textarea');
-      description.id = file.name + '_description';
-      description.name = file.name + '_description';
-      description.placeholder = 'I dag syklet jeg fra...';
-      description.rows = 10
-      description.autocomplete = 'off';
-      description.spellcheck = true;
-      description.wrap = 'soft';
-      description.style.width = '100%';
-      description.style.boxSizing = 'border-box';
-      description.style.whiteSpace = 'pre-line';
+  function previewFiles(event) {
+    const filepondDescription = document.getElementById("filepondDescription");
+    const preview = document.getElementById("preview");
+    readAndPreview(filepondDescription, preview, event.file);
+  }
 
-      description.addEventListener('input', () => {
-        const element = document.getElementById('preview_' + file.name + '_description');
-        if (element) {
-          element.textContent = description.value;
-        }
-      });
+  function readAndPreview(form, preview, file) {
+    const div = document.createElement('div');
+    div.id = 'form_' + file.name;
 
-      const description_p = document.createElement('p');
-      description_p.appendChild(description_label);
-      description_p.appendChild(description);
-      div.appendChild(description_p);
+    const altText_label = document.createElement('label');
+    altText_label.textContent = 'Alt text for ' + file.name + ':';
+    altText_label.htmlFor = file.name + '_alt_text';
 
-      form.appendChild(div);
+    const altText = document.createElement('input');
+    altText.type = 'text';
+    altText.placeholder = 'Alt text for image';
+    altText.name = file.name + '_alt_text';
+    altText.style.width = '100%';
+    altText.style.boxSizing = 'border-box';
+    altText.addEventListener('input', () => {
+      const element = document.getElementById('preview_' + file.name + '_image');
+      if (element) {
+        element.alt = altText.value;
+      }
+    });
 
-      const reader = new FileReader();
+    const altText_p = document.createElement('p');
+    altText_p.appendChild(altText_label);
+    altText_p.appendChild(altText);
+    div.appendChild(altText_p);
 
-      reader.addEventListener(
-        "load",
-        async () => {
-          const image = new Image();
-          image.id = 'preview_' + file.name + '_image';
-          image.alt = file.name;
-          image.src = reader.result;
+    // Caption for the image
+    const caption_label = document.createElement('label');
+    caption_label.textContent = 'Caption for ' + file.name + ':';
+    caption_label.htmlFor = file.name + '_caption';
 
-          const paragraph = document.createElement('p');
-          paragraph.id = 'preview_' + file.name;
-          paragraph.appendChild(image);
+    const caption = document.createElement('input');
+    caption.type = 'text';
+    caption.id = file.name + '_caption';
+    caption.name = file.name + '_caption';
+    caption.placeholder = 'Caption for image';
+    caption.style.width = '100%';
+    caption.style.boxSizing = 'border-box';
 
-          try {
-            const location = await getLocationInfo(file);
-            const caption_element = document.createElement('em');
+    caption.addEventListener('input', () => {
+      const element = document.getElementById('preview_' + file.name + '_caption');
+      if (element) {
+        element.textContent = caption.value;
+      }
+    });
 
-            if (location) {
-              const hiddenLocation = document.createElement('input');
-              hiddenLocation.type = 'hidden';
-              hiddenLocation.id = file.name + '_location';
-              hiddenLocation.name = file.name + '_location';
-              hiddenLocation.value = JSON.stringify(location);
-              form.appendChild(hiddenLocation);
+    const caption_p = document.createElement('p');
+    caption_p.appendChild(caption_label);
+    caption_p.appendChild(caption);
+    div.appendChild(caption_p);
 
-              const a = document.createElement('a');
-              a.href = `https://www.openstreetmap.org/?mlat=${location.latitude}&mlon=${location.longitude}`;
-              caption_element.appendChild(a);
+    // Image description, aka paragraph between images
+    const description_label = document.createElement('label');
+    description_label.textContent = 'Description for ' + file.name + ':';
+    description_label.htmlFor = file.name + '_description';
 
-              if (location.geocoding) {
-                const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
-                a.textContent = locationName;
-              } else {
-                a.textContent = "View on OpenStreetMap";
-              }
+    const description = document.createElement('textarea');
+    description.id = file.name + '_description';
+    description.name = file.name + '_description';
+    description.placeholder = 'I dag syklet jeg fra...';
+    description.rows = 10
+    description.autocomplete = 'off';
+    description.spellcheck = true;
+    description.wrap = 'soft';
+    description.style.width = '100%';
+    description.style.boxSizing = 'border-box';
+    description.style.whiteSpace = 'pre-line';
 
-              await new Promise(r => setTimeout(r, 1000));
+    description.addEventListener('input', () => {
+      const element = document.getElementById('preview_' + file.name + '_description');
+      if (element) {
+        element.textContent = description.value;
+      }
+    });
+
+    const description_p = document.createElement('p');
+    description_p.appendChild(description_label);
+    description_p.appendChild(description);
+    div.appendChild(description_p);
+
+    form.appendChild(div);
+
+    const reader = new FileReader();
+
+    reader.addEventListener(
+      "load",
+      async () => {
+        const image = new Image();
+        image.id = 'preview_' + file.name + '_image';
+        image.alt = file.name;
+        image.src = reader.result;
+
+        const paragraph = document.createElement('p');
+        paragraph.id = 'preview_' + file.name;
+        paragraph.appendChild(image);
+
+        try {
+          const location = await getLocationInfo(file);
+          const caption_element = document.createElement('em');
+
+          if (location) {
+            const hiddenLocation = document.createElement('input');
+            hiddenLocation.type = 'hidden';
+            hiddenLocation.id = file.name + '_location';
+            hiddenLocation.name = file.name + '_location';
+            hiddenLocation.value = JSON.stringify(location);
+            form.appendChild(hiddenLocation);
+
+            const a = document.createElement('a');
+            a.href = `https://www.openstreetmap.org/?mlat=${location.latitude}&mlon=${location.longitude}`;
+            caption_element.appendChild(a);
+
+            if (location.geocoding) {
+              const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
+              a.textContent = locationName;
             } else {
-              caption_element.appendChild(document.createTextNode('No location data available'));
+              a.textContent = "View on OpenStreetMap";
             }
 
-            caption_element.appendChild(document.createTextNode(': '));
-
-            caption_preview = document.createElement('span');
-            caption_preview.id = 'preview_' + file.name + '_caption';
-            caption_preview.textContent = caption.value;
-            caption_element.appendChild(caption_preview);
-
-            paragraph.appendChild(caption_element);
-          } catch (error) {
-            console.error('Error getting location info:', error);
+            await new Promise(r => setTimeout(r, 1000));
+          } else {
+            caption_element.appendChild(document.createTextNode('No location data available'));
           }
 
-          desc_preview = document.createElement('p');
-          desc_preview.id = 'preview_' + file.name + '_description';
-          desc_preview.textContent = description.value;
-          paragraph.appendChild(desc_preview);
+          caption_element.appendChild(document.createTextNode(': '));
 
-          preview.appendChild(paragraph);
+          caption_preview = document.createElement('span');
+          caption_preview.id = 'preview_' + file.name + '_caption';
+          caption_preview.textContent = caption.value;
+          caption_element.appendChild(caption_preview);
 
-          geoLocationDataUrls.push({
-            filename: file.name,
-            dataUrl: reader.result,
-            location: location,
-          });
-        },
-        false,
-      );
+          paragraph.appendChild(caption_element);
+        } catch (error) {
+          console.error('Error getting location info:', error);
+        }
 
-      reader.readAsDataURL(file);
-    }
+        desc_preview = document.createElement('p');
+        desc_preview.id = 'preview_' + file.name + '_description';
+        desc_preview.textContent = description.value;
+        paragraph.appendChild(desc_preview);
 
-    function getLocationInfo(file) {
-      return new Promise((resolve, reject) => {
-        EXIF.getData(file, function () {
-          const lat = EXIF.getTag(this, "GPSLatitude");
-          const lon = EXIF.getTag(this, "GPSLongitude");
-          const latRef = EXIF.getTag(this, "GPSLatitudeRef");
-          const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
+        preview.appendChild(paragraph);
 
-          if (lat && lon && latRef && lonRef) {
-            const location = {
-              latitude: (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1),
-              longitude: (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1),
-            };
-            getReverseGeocodingData(location.latitude, location.longitude)
-              .then(geocoding => {
-                location.geocoding = geocoding;
-                resolve(location);
-              })
-              .catch(error => {
-                reject(error);
-              });
+        geoLocationDataUrls.push({
+          filename: file.name,
+          dataUrl: reader.result,
+          location: location,
+        });
+      },
+      false,
+    );
+
+    reader.readAsDataURL(file);
+  }
+
+  function getLocationInfo(file) {
+    return new Promise((resolve, reject) => {
+      EXIF.getData(file, function () {
+        const lat = EXIF.getTag(this, "GPSLatitude");
+        const lon = EXIF.getTag(this, "GPSLongitude");
+        const latRef = EXIF.getTag(this, "GPSLatitudeRef");
+        const lonRef = EXIF.getTag(this, "GPSLongitudeRef");
+
+        if (lat && lon && latRef && lonRef) {
+          const location = {
+            latitude: (lat[0] + lat[1] / 60 + lat[2] / 3600) * (latRef === "N" ? 1 : -1),
+            longitude: (lon[0] + lon[1] / 60 + lon[2] / 3600) * (lonRef === "E" ? 1 : -1),
+          };
+          getReverseGeocodingData(location.latitude, location.longitude)
+            .then(geocoding => {
+              location.geocoding = geocoding;
+              resolve(location);
+            })
+            .catch(error => {
+              reject(error);
+            });
+        } else {
+          console.log('No GPS data found for file:', file.name);
+          resolve(null);
+        }
+      });
+    });
+  }
+
+  function getReverseGeocodingData(lat, lng) {
+    return new Promise((resolve, reject) => {
+      const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
+      fetch(url, {
+        headers: {
+          'Referer': 'http://kyrremann.no/plog',
+          'User-Agent': 'Plog/1.0 - kyrremann'
+        }
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data && data.address) {
+            const {suburb, city, municipality, country} = data.address;
+            resolve({suburb, city, municipality, country});
           } else {
-            console.log('No GPS data found for file:', file.name);
             resolve(null);
           }
-        });
-      });
-    }
-
-    function getReverseGeocodingData(lat, lng) {
-      return new Promise((resolve, reject) => {
-        const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`;
-        fetch(url, {
-          headers: {
-            'Referer': 'http://kyrremann.no/plog',
-            'User-Agent': 'Plog/1.0 - kyrremann'
-          }
         })
-          .then(response => response.json())
-          .then(data => {
-            if (data && data.address) {
-              const {suburb, city, municipality, country} = data.address;
-              resolve({suburb, city, municipality, country});
-            } else {
-              resolve(null);
-            }
-          })
-          .catch(error => {
-            console.error('Error with reverse geocoding:', error);
-            reject(error);
-          });
-      });
-    }
+        .catch(error => {
+          console.error('Error with reverse geocoding:', error);
+          reject(error);
+        });
+    });
+  }
 
-    function toggleToken() {
-      var token = document.getElementById("token");
-      if (token.type === "password") {
-        token.type = "text";
-      } else {
-        token.type = "password";
-      }
+  function toggleToken() {
+    var token = document.getElementById("token");
+    if (token.type === "password") {
+      token.type = "text";
+    } else {
+      token.type = "password";
     }
-  </script>
+  }
+</script>
