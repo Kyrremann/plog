@@ -9,7 +9,7 @@ title: New post
     <p>
       <label for="title">Tittel</label>
       <br>
-      <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="Bikepacking Shikoku, Japan: Day 20">
+      <input id="title" name="title" type="text" placeholder="Tittel på post" style="width: 100%; box-sizing: border-box;" value="">
     </p>
     <p>
       <label for="date">Dato</label>
@@ -19,7 +19,7 @@ title: New post
     <p>
       <label for="categories">Kategorier</label>
       <br>
-      <input id="categories" name="categories" type="text" placeholder="Kommaseparert liste" style="width: 100%; box-sizing: border-box;" value="bikepacking, japan">
+      <input id="categories" name="categories" type="text" placeholder="Liste med mellomrom" style="width: 100%; box-sizing: border-box;" value="bikepacking japan">
     </p>
     <p>
       <label for="token">Token</label>
@@ -32,7 +32,7 @@ title: New post
     <p>
       <label for="strava">Strava</label>
       <br>
-      <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="https://www.strava.com/activities/1010101010">
+      <input id="strava" name="strava" type="url" style="width: 100%; box-sizing: border-box;" value="">
     </p>
     <p>
       <input id="my-pond" type="file" class="my-pond" name="filepond"/>
@@ -46,7 +46,7 @@ title: New post
   <br>
   <h1 id="previewTitle">Preview</h1>
   <span class="post-date">
-    Written on <span id="previewDate">April 26th, 2024</span> by Kyrre Havik
+    Written on <span id="previewDate"></span> by Kyrre Havik
   </span>
   <article>
     <p><a id="previewStrava" href="">Strava activiy</a></p>
@@ -160,7 +160,6 @@ title: New post
       altText.type = 'text';
       altText.placeholder = 'Alt text for image';
       altText.name = file.name + '_alt_text';
-      altText.value = "Alt text for image";
       altText.style.width = '100%';
       altText.style.boxSizing = 'border-box';
       altText.addEventListener('input', () => {
@@ -187,7 +186,7 @@ title: New post
       caption.placeholder = 'Caption for image';
       caption.style.width = '100%';
       caption.style.boxSizing = 'border-box';
-      caption.value = "Bikepacking Shikoku, Japan: Day 20";
+
       caption.addEventListener('input', () => {
         const element = document.getElementById('preview_' + file.name + '_caption');
         if (element) {
@@ -216,7 +215,7 @@ title: New post
       description.style.width = '100%';
       description.style.boxSizing = 'border-box';
       description.style.whiteSpace = 'pre-line';
-      description.value = "Da var turen over! Samlet inn 28/29 stempler (et sted var stengt), tilsammen 1200km og 11000 høydemeter! Vært en flott tur, men mange fine opplevelser. Shikoku er en fin øy som jeg virkelig kan anbefale!";
+
       description.addEventListener('input', () => {
         const element = document.getElementById('preview_' + file.name + '_description');
         if (element) {
@@ -252,7 +251,7 @@ title: New post
             if (location) {
               const hiddenLocation = document.createElement('input');
               hiddenLocation.type = 'hidden';
-              hiddenLocation.id = 'form_' + file.name + '_location';
+              hiddenLocation.id = file.name + '_location';
               hiddenLocation.name = file.name + '_location';
               hiddenLocation.value = JSON.stringify(location);
               form.appendChild(hiddenLocation);
