@@ -276,7 +276,7 @@ title: New post
 
             caption_preview = document.createElement('span');
             caption_preview.id = 'preview_' + file.name + '_caption';
-            caption_preview.textContent = caption.value || file.name;
+            caption_preview.textContent = caption.value;
             caption_element.appendChild(caption_preview);
 
             paragraph.appendChild(caption_element);
@@ -286,7 +286,7 @@ title: New post
 
           desc_preview = document.createElement('p');
           desc_preview.id = 'preview_' + file.name + '_description';
-          desc_preview.textContent = description.value || file.name;
+          desc_preview.textContent = description.value;
           paragraph.appendChild(desc_preview);
 
           preview.appendChild(paragraph);
