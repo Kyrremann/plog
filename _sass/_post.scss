@@ -36,3 +36,12 @@ img + em {
     font-size: 12px;
     font-style: normal;
 }
+.featured-image pre {
+  padding: 8px 12px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #edfaff;
+  border: 1px solid #B4DCED;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
