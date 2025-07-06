@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /newsletter
+permalink: /nyhetsbrev
 ---
 <!-- Begin Brevo Form -->
 <!-- START - We recommend to place the below code in head tag of your website html  -->

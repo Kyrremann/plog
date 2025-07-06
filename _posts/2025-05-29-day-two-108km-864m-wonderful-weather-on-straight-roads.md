@@ -1,7 +1,7 @@
 ---
 title: "Day two, 108km, 864m - Wonderful weather on straight roads"
 date: "2025-05-29"
-categories: "bikepacking norway"
+categories: "bikepacking norway norge"
 main:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250529_100538.jpg"
   alt_text: "A long straight gravel road, surrounded by trees."

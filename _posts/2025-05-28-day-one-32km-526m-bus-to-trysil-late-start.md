@@ -1,7 +1,7 @@
 ---
 title: "Day one, 32km,526m - Bus to Trysil, late start"
 date: "2025-05-28"
-categories: "bikepacking norway"
+categories: "bikepacking norway norge"
 main:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250529_095359.jpg"
   alt_text: "A red sign showing the distances to Gravberget, and Magnor."

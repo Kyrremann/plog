@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Norway
-category: norway
-permalink: /norway
+title: Norge
+category: norge
+permalink: /norge
 ---

@@ -1,14 +1,19 @@
 <span class="post-date">
-  {{ site.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st
-    {% when '2' or '22' %}{{ d }}nd
-    {% when '3' or '23' %}{{ d }}rd
-    {% else %}{{ d }}th{% endcase %},
+  Skrevet
+  {{ page.date | date: "%-d" }}.
+  {% assign m = page.date | date: "%B" %}
+  {%- case m -%}
+    {%- when "January" %}januar
+    {%- when "February" %}februar
+    {%- when "March" %}mars
+    {%- when "May" %}mai
+    {%- when "June" %}juni
+    {%- when "July" %}juli
+    {%- when "October" %}oktober
+    {%- when "December" %}desember
+    {% else %}{{ m | downcase }}{%- endcase -%},
   {{ page.date | date: "%Y" }}
-  by
+  av
   {% if page.author %}
     {{ page.author }}
   {% else %}

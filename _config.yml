@@ -1,5 +1,5 @@
 title: "P[icture]log"
-description: A log of pictures from my life
+description: En logg av bilder fra mine eventyr
 author: Kyrre Havik
 
 # jekyll-paginate configuration
@@ -19,15 +19,13 @@ plugins:
 #feed:
 #  path: rss-feed.xml
 
-# Customized settings
-post_date_prefix: Written on
 menu:
 - name: Japan
   url: japan
-- name: Norway
-  url: norway
-- name: About
-  url: about
+- name: Norge
+  url: norge
+- name: Om
+  url: om
 pagination:
   next_page: 'Newer'
   previous_page: 'Older'
