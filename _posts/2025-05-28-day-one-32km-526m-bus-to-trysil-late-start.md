@@ -10,6 +10,7 @@ main:
   coordinates: "61.08870399972223,11.990555999722222"
   coordinates_url: "https://www.google.com/maps/place/61.08870399972223,11.990555999722222"
 strava: "https://www.strava.com/activities/14624084536"
+banner: Hentet fra <a href="https://kyrremann.no/bikepacking/norway/2025/villmarksvegen">kyrremann.no/bikepacking</a>
 ---
 
 As there where some delays out of Oslo, I was a bit behind schedule when I arrived at Trysil Turistsenter. Still, the weather was nice, and the sun wouldn’t set for another three hours. Plenty of time for me to cycle the 30 km to the planned lean-to (gapahuk in Norwegian).

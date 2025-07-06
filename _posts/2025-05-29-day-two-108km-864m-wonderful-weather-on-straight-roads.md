@@ -10,6 +10,7 @@ main:
   coordinates: "61.06719999972223,12.011085599722222"
   coordinates_url: "https://www.google.com/maps/place/61.06719999972223,12.011085599722222"
 strava: "https://www.strava.com/activities/14632256172"
+banner: Hentet fra <a href="https://kyrremann.no/bikepacking/norway/2025/villmarksvegen">kyrremann.no/bikepacking</a>
 ---
 
 There isn’t much to stop and look at out in the forest, other that trees and plants growing. So it’s a nice way to get into the zone and do a little soul-searching.
