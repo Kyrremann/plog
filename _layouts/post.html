@@ -19,7 +19,7 @@ layout: default
       {% endif %}
       <img src="{{ page.main.image }}" alt="{{ page.main.alt_text }}" />
       {% if page.main.caption %}
-        <em><a href="{{ page.main.coordinates_url }}">{{ page.main.location }}</a>: {{ page.main.caption }}</em>
+        <em>{% if page.main.location %}<a href="{{ page.main.coordinates_url }}">{{ page.main.location }}</a>: {% endif %}{{ page.main.caption }}</em>
       {% endif %}
     </div>
   {% endif %}
