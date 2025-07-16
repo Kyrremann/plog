@@ -81,12 +81,7 @@ title: New post
   pond.imageTransformOutputQuality = 75;
   pond.imageTransformOutputStripImageHead = false;
 
-  pond.on('addfile', (error, file) => {
-    if (error) {
-      console.log('Oh no: ', error);
-      return;
-    }
-
+  pond.on('initfile', (file) => {
     previewFiles(file);
   });
 
