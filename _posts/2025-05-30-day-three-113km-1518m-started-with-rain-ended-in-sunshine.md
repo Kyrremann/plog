@@ -6,7 +6,8 @@ main:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250530_094724.jpg"
   alt_text: "A silent lake with trees reflecting in the water. The clouds are gray, full of rain."
   caption: "The view from the cabin, I wasn’t stoked to get out."
-  strava: "https://www.strava.com/activities/14643541976"
+strava: "https://www.strava.com/activities/14643541976"
+banner: Hentet fra <a href="https://kyrremann.no/bikepacking/norway/2025/villmarksvegen">kyrremann.no/bikepacking</a>
 ---
 
 It had been raining most of the night, and the sky was gray when we woke up. Eating breakfast and looking out on the lake with the rain pouring down wasn’t the most motivating view, but it was still pretty serene.
