@@ -71,15 +71,6 @@ title: New post
 
   // Create a FilePond instance
   const pond = FilePond.create(pondElement);
-  pond.server = {
-    process: {
-      url: 'https://process.plog.kyrremann.no',
-    },
-    revert: {
-      url: 'https://kyrremannnoutglbbgy-plog-revert.functions.fnc.nl-ams.scw.cloud',
-    }
-  }
-
   pond.allowMultiple = true;
   pond.itemInsertLocation = 'after';
   pond.imageResizeTargetWidth = 1440;
@@ -120,6 +111,7 @@ title: New post
   const title = document.getElementById("title");
   const date = document.getElementById("date");
   const strava = document.getElementById("strava");
+  const token = document.getElementById("token");
   let geoLocationDataUrls = [];
 
   document.addEventListener('DOMContentLoaded', () => {
@@ -140,6 +132,23 @@ title: New post
       document.getElementById("previewStrava").href = strava.value || 'Preview';
     });
     strava.dispatchEvent(new Event('input'));
+
+    token.addEventListener('input', () => {
+      pond.server = {
+        process: {
+          url: 'https://process.plog.kyrremann.no',
+          headers: {
+            'X-Auth-Token': token.value,
+          }
+        },
+        revert: {
+          url: 'https://revert.plog.kyrremann.no',
+          headers: {
+            'X-Auth-Token': token.value,
+          }
+        }
+      };
+    });
   });
 
   function previewFiles(event) {
