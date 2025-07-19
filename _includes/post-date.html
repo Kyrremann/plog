@@ -1,5 +1,5 @@
 <span class="post-date">
-  Skrevet
+  Publisert
   {{ page.date | date: "%-d" }}.
   {% assign m = page.date | date: "%B" %}
   {%- case m -%}
@@ -13,10 +13,4 @@
     {%- when "December" %}desember
     {% else %}{{ m | downcase }}{%- endcase -%},
   {{ page.date | date: "%Y" }}
-  av
-  {% if page.author %}
-    {{ page.author }}
-  {% else %}
-    {{ site.author }}
-  {% endif %}
 </span>
