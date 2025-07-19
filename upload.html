@@ -174,7 +174,29 @@ title: New post
     const thumbnail = new Image();
     thumbnail.id = 'thumbnail_' + file.name;
     thumbnail.style.width = '100px';
+    thumbnail.style.border = '2px solid transparent';
     div_image.appendChild(thumbnail);
+
+    // <input type="radio" value="value1" name="group1">
+    const radio = document.createElement('input');
+    radio.type = 'radio';
+    radio.name = 'featured_image';
+    radio.value = file.name;
+    radio.id = 'radio_' + file.name;
+    radio.addEventListener('change', () => {
+      const allRadios = document.querySelectorAll('input[name="featured_image"]');
+      allRadios.forEach(r => {
+        const previewImage = document.getElementById('thumbnail_' + r.value);
+        if (previewImage) {
+          previewImage.style.border = r.checked ? '2px solid blue' : '2px solid transparent';
+        }
+      });
+    });
+    div_image.appendChild(radio);
+    const radio_label = document.createElement('label');
+    radio_label.htmlFor = 'radio_' + file.name;
+    radio_label.textContent = 'Featured';
+    div_image.appendChild(radio_label);
 
     const div_textbox = document.createElement('div');
     div_textbox.style.alignContent = 'space-between';
