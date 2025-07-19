@@ -19,13 +19,6 @@ plugins:
 #feed:
 #  path: rss-feed.xml
 
-menu:
-- name: Japan
-  url: japan
-- name: Norge
-  url: norge
-- name: Om
-  url: om
 pagination:
   next_page: 'Newer'
   previous_page: 'Older'
