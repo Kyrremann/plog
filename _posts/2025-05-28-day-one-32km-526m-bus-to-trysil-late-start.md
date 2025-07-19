@@ -2,16 +2,14 @@
 title: "Day one, 32km,526m - Bus to Trysil, late start"
 date: "2025-05-28"
 categories: "bikepacking norway norge"
-main:
+feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250529_095359.jpg"
-  alt_text: "A red sign showing the distances to Gravberget, and Magnor."
-  caption: "There where surprisingly few of these types of sign, and none of them specified the length to Halden."
-  location: "Trysil, Norge"
-  coordinates: "61.08870399972223,11.990555999722222"
-  coordinates_url: "https://www.google.com/maps/place/61.08870399972223,11.990555999722222"
 strava: "https://www.strava.com/activities/14624084536"
 banner: Hentet fra <a href="https://kyrremann.no/bikepacking/norway/2025/villmarksvegen">kyrremann.no/bikepacking</a>
 ---
+
+![A red sign showing the distances to Gravberget, and Magnor.](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/05/20250529_095359.jpg)
+*[Trysil, Norge](https://www.google.com/maps/place/61.08870399972223,11.990555999722222): There where surprisingly few of these types of sign, and none of them specified the length to Halden.
 
 As there where some delays out of Oslo, I was a bit behind schedule when I arrived at Trysil Turistsenter. Still, the weather was nice, and the sun wouldn’t set for another three hours. Plenty of time for me to cycle the 30 km to the planned lean-to (gapahuk in Norwegian).
 

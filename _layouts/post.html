@@ -9,20 +9,14 @@ layout: default
   {% if site.hide_post_date != true %}
     {% include post-date.html %}
   {% endif %}
-  {% if page.main %}
-    <div class="featured-image">
-      {% if page.banner %}
-        <pre>{{ page.banner }}</pre>
-      {% endif %}
-      {% if page.strava %}
-      <p><a href="{{ page.strava }}">Strava-aktivitet</a></p>
-      {% endif %}
-      <img src="{{ page.main.image }}" alt="{{ page.main.alt_text }}" />
-      {% if page.main.caption %}
-        <em>{% if page.main.location %}<a href="{{ page.main.coordinates_url }}">{{ page.main.location }}</a>: {% endif %}{{ page.main.caption }}</em>
-      {% endif %}
-    </div>
-  {% endif %}
+  <div class="featured-image">
+    {% if page.banner %}
+    <pre>{{ page.banner }}</pre>
+    {% endif %}
+    {% if page.strava %}
+    <p><a href="{{ page.strava }}">Strava-aktivitet</a></p>
+    {% endif %}
+  </div>
   <article>
     {{ content }}
   </article>
