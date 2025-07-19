@@ -343,6 +343,7 @@ title: New post
         desc_preview = document.createElement('p');
         desc_preview.id = 'preview_' + file.name + '_description';
         desc_preview.textContent = description.value;
+        desc_preview.style.whiteSpace = 'pre-line';
         paragraph.appendChild(desc_preview);
 
         preview.appendChild(paragraph);
