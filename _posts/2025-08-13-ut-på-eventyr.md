@@ -23,6 +23,6 @@ Og alt sammen skal festes på sykkelen, og gjerne ha litt plass til mat eller no
 
 
 ![En sykkelkoffert på flyplassen](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250813_111921.jpg)
-*[Ullensaker, Norge](https://www.google.com/maps/place/60.194294199999995,11.095723599722223): Pro versjonen hadde et ekstra hjul foran! *
+*[Ullensaker, Norge](https://www.google.com/maps/place/60.194294199999995,11.095723599722223): Pro versjonen hadde et ekstra hjul foran!*
 
 Jeg har med min egen sykkel til Japan, så den må fraktes i noe også. Denne kommer til å bli sendt med posten fra hotell til hotell en gang i måneden. Håper det funker i år også 🤞
