@@ -10,6 +10,8 @@ feature:
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250816_072251.jpg)
 *[Japan](https://www.google.com/maps/place/45.22210559972223,141.21346559999998): Var deilig å gå flatt på returen etter 1500 høydemeter.*
 
+I dag var det fjelltur til Rishiri-fjellet, ofte kalt Rishirifuji fordi det ligner på Fuji-fjellet på agendaen. Øya Rishiri oppstod for fryktelig lenge siden på grunn av mange vulkanutbrudd, og hele øya er egentlig en stratovulkan, altså en kjegleformet vulkan. Været var bra for fjelltur, men var meldt skyer og litt regn på ettermiddagen, så jeg starter kl07! Var spent på turen, da det var over 1500 høydemeter, på ganske kort distanse.
+
 Turen startet rolig i skogen, men som man vil se senere så går man på en måte aldri ut av skogen. Trærne bare blir kortere, mens vegetasjonen blir tettere. Så selv om det begynte å blåse opp til 11m/s lengre oppi, så gikk man hele tiden i ly.
 
 
@@ -18,13 +20,9 @@ Turen startet rolig i skogen, men som man vil se senere så går man på en måt
 
 Underveis på turen så kunne man finne disse stasjonene, som bare sa hvor høyt du var. Ikke noe info på hvor langt du hadde gått, eller hadde igjen. Heldigvis hadde jeg tatt bildet av kartet i bunn som sa antall minutter mellom stasjonene. 
 
-
-![]()
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250816_090229.jpg)
 *Fantastisk utsikt fra sjette stasjon*
 
-I dag var Rishiri-fjellet, ofte kalt Rishirifuji fordi det ligner på Fuji-fjellet. Enkelt og greit. Øya Rishiri oppstår for fryktelig lenge siden på grunn av mange vulkanutbrudd, og hele øya er egentlig en stratovulkan, altså en kjegleformet vulkan. Været var bra for fjelltur, men var meldt skyer og litt regn på ettermiddagen, så jeg starter kl07! Var spent på turen, da det var over 1500 høydemeter, på ganske kort distanse.
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250816_090355.jpg)
