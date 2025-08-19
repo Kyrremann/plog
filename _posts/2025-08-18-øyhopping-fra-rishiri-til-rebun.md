@@ -4,7 +4,6 @@ date: "2025-08-18"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250818_091225.jpg"
-
 ---
 
 
@@ -25,10 +24,12 @@ Var innom enda en park med et vann/myr. Her hadde de lagd en tømmersti, så man
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250818_114211.jpg)
-*[Japan](https://www.google.com/maps/place/45.100092799722226,141.2270848): Den toppen tiltrekker seg skyer! *
+*[Japan](https://www.google.com/maps/place/45.100092799722226,141.2270848): Den toppen tiltrekker seg skyer!*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250818_134521.jpg)
+*Soya er et transportselskap, er mange busser med samme navn*
+
 Enda en ferjetur! Denne gangen var det bare jeg som syklet på, og én annen bil. Så var godt med plass, var seks arbeidere som tok meg i mot.
 
 En annen kul ting med japanske ferjer, som jeg glemte å ta bilde av, er at de har gulvplasser. I stedet for en haug med rader med seter, så er det gulvtepper man sitter på i stedet. Må så klart ta av seg på skoene. Japanere har et helt annet forhold til gulv enn vesten har. Merker jeg liker det!
@@ -55,6 +56,6 @@ Ganske fornøyd med oppsettet, klarer å pakke alt inn og ut av baggene inni tel
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250818_194744.jpg)
-*[Japan](https://www.google.com/maps/place/45.43484479999999,141.02709759972225): Flotter meg med et nattbilde. *
+*[Japan](https://www.google.com/maps/place/45.43484479999999,141.02709759972225): Flotter meg med et nattbilde.*
 
 Var gira på å kikke på stjernene, men var veldig mye gatelys i den lille bygda, så var ikke så lett. Hjalp så klart ikke at det var overskyet også.
