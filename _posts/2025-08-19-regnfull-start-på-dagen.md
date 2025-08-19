@@ -4,7 +4,6 @@ date: "2025-08-19"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250819_100707.jpg"
-
 ---
 
 
@@ -15,11 +14,8 @@ Var meldt en del regn denne natta, men når jeg la meg så skulle det slutte å 
 
 Skulle egentlig dra tilbake til Wakkanai i dag, men på grunn av at regnet lettet, og mulighet for sol i morgen ble det en dag til. Håper å få syklet litt grus i morgen, og kanskje sett en foss!
 
-
-![]()
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250819_115519.jpg)
-*[Japan](https://www.google.com/maps/place/45.299424599999995,141.04655859972223): Gjennskaping av Jōnmon-folkeslaget basert på genetikk! *
+*[Japan](https://www.google.com/maps/place/45.299424599999995,141.04655859972223): Gjennskaping av Jōnmon-folkeslaget basert på genetikk!*
 
 Besøkte det lokale naturhistoriskemuseumet på øya. Der lærte jeg om Jōnmon-folket, som var det prehistoriske folkeslaget som bodde her i nord. De drev for det meste med jakt og sanking, men også tidlig dyrking av jorden! 
 
@@ -41,6 +37,6 @@ Rebun øya gir meg veldig Færøyene vibber. Grønt, frodig, og forblåst. Den s
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250819_180131.jpg)
-*[Japan](https://www.google.com/maps/place/45.30410189972222,141.04862639972222): Maiste? *
+*[Japan](https://www.google.com/maps/place/45.30410189972222,141.04862639972222): Maiste?*
 
 Må jo nesten prøve disse unike tingene de selger i Japan. Og i dag var det maiste som dukket opp. Ikke overraskende smakte det som maisvann fra boks.
