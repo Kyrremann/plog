@@ -4,12 +4,11 @@ date: "2025-08-22"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250822_080055.jpg"
-
 ---
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250822_080055.jpg)
-*[Japan](https://www.google.com/maps/place/45.1257408,142.34632959972222): Kei truck med hjemmesnekret overbygg! *
+*[Japan](https://www.google.com/maps/place/45.1257408,142.34632959972222): Kei truck med hjemmesnekret overbygg!*
 
 Har ikke blitt like mange teltnetter som jeg hadde planlagt, men i natt ble det sovepose. Lå nede ved Kutcharo innsjøen, som betyr at alt har et fuktig lag når man står opp. Heldigvis strålte solen, og ting tørket fort. Fikk nytt morgenen i en av luksustingene jeg tok med meg, en stol!
 
@@ -33,7 +32,7 @@ Heldigvis var det et veldig fint, og spennende museum på veien. Dette museumet 
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250822_165951.jpg)
-*[Japan](https://www.google.com/maps/place/44.4825376,143.09864949972223): Usikker på hvordan jeg skal tolke signalet.*
+*[Japan](https://www.google.com/maps/place/44.4825376,143.09864949972223): Montro om de tilber traktorer på gården?*
 
 På vei til Monbetsu, havnebyen som er mitt siste stopp på østkysten, syklet jeg forbi en gård som hadde to traktorer på hver sin pidestall på vei inn til gården.
 
