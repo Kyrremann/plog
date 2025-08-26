@@ -177,14 +177,13 @@ title: New post
     thumbnail.style.border = '2px solid transparent';
     div_image.appendChild(thumbnail);
 
-    // <input type="radio" value="value1" name="group1">
     const radio = document.createElement('input');
     radio.type = 'radio';
     radio.name = 'feature_image';
     radio.value = file.name;
     radio.id = 'radio_' + file.name;
     radio.addEventListener('change', () => {
-      const allRadios = document.querySelectorAll('input[name="featured_image"]');
+      const allRadios = document.querySelectorAll('input[name="feature_image"]');
       allRadios.forEach(r => {
         const previewImage = document.getElementById('thumbnail_' + r.value);
         if (previewImage) {
