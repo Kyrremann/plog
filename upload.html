@@ -236,6 +236,9 @@ title: New post
     caption.placeholder = 'Caption for image';
     caption.style.width = '100%';
     caption.style.boxSizing = 'border-box';
+    caption.addEventListener("blur", function(elem) {
+      elem.name = elem.name.trim();
+    });
 
     caption.addEventListener('input', () => {
       const element = document.getElementById('preview_' + file.name + '_caption');
