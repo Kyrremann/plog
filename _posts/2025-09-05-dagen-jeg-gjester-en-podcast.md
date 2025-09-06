@@ -20,6 +20,12 @@ I dag var den store dagen hvor jeg skulle gjeste podcasten Cycling Hokkaido! En 
 Han kom og møtte meg på sykkelen sin, Breezer, en sykkel man hører mye om hvis man lytter til podcasten! Så vi fikk en fin sykkeltur tilbake til huset hans. Da fikk vi blitt mer kjent, og han viste meg rundt i nabolaget.
 
 
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/Snapchat-1706409094.jpg)
+*Var veldig rart å se skandinaviske hus rundt omkring i forstaden til Sapporo.*
+
+Han har bodd i Ishikari i nesten 20 år med sin kone, i det samme boligfeltet, og det har visst endret seg masse! Og de siste årene har det dukket opp en del hus i skandinavisk stil! Swedish house kalles de, og de ser veldig nordiske ut. Eneste de mangler er å faktisk være lagd av tre. Var masse av de!
+
+
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250905_100908.jpg)
 *Deilig med en europeisk frokost med hjemmelaget brød!*
 
@@ -38,9 +44,3 @@ Vi hadde en veldig morsom prat, hvor jeg for det meste pratet om min tur, og lit
 *En nysgjerrig katt skuer ut i mørket.*
 
 Jeg har egentlig ikke noen spesifikke planer for denne helga, så jeg startet å sykle vestover mot Otaru, men jeg glemte å spise, så energien kræsjet litt. Så da fant jeg en helt tom teltplass i utkanten av Otaru, så får vi se hva morgendagen bringer!
-
-
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/Snapchat-1706409094.jpg)
-*Var veldig rart å se skandinaviske hus rundt omkring i forstaden til Sapporo.*
-
-Han har bodd i Ishikari i nesten 20 år med sin kone, i det samme boligfeltet, og det har visst endret seg masse! Og de siste årene har det dukket opp en del hus i skandinavisk stil! Swedish house kalles de, og de ser veldig nordiske ut. Eneste de mangler er å faktisk være lagd av tre. Var masse av de!
