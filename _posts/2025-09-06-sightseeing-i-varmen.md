@@ -1,6 +1,6 @@
 ---
 title: "Sightseeing i varmen"
-date: "2025-09-07"
+date: "2025-09-06"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250906_094514.jpg"
