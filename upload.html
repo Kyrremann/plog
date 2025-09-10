@@ -404,8 +404,7 @@ title: New post
         .then(response => response.json())
         .then(data => {
           if (data && data.address) {
-            const {suburb, city, municipality, country} = data.address;
-            resolve({suburb, city, municipality, country});
+            resolve(data.address);
           } else {
             resolve(null);
           }
