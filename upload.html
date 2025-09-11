@@ -320,7 +320,7 @@ title: New post
             caption_element.appendChild(a);
 
             if (location.geocoding) {
-              const locationName = `${location.geocoding.suburb}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.country}`;
+              const locationName = `${location.geocoding.suburb}, ${location.geocoding.town}, ${location.geocoding.city}, ${location.geocoding.municipality}, ${location.geocoding.province}, ${location.geocoding.country}`;
               a.textContent = locationName;
             } else {
               a.textContent = "View on OpenStreetMap";
