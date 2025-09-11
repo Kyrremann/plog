@@ -19,7 +19,6 @@ Ingen store planer for dagen, så da ble det to fotturer. Først besøkte jeg et
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250910_110544_0129_D.jpg)
-
 *[Japan](https://www.google.com/maps/place/42.90522694444444,140.59579308333335): Fikk testet dronen litt i dag.*
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/2025091011_1021_0140_D.jpg)
