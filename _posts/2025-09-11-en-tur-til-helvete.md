@@ -11,13 +11,13 @@ feature:
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250911_072641.jpg)
 *[Toyako, Hokkaido Prefecture, Japan](https://www.google.com/maps/place/42.644126399722225,140.8442635): Frokostbuddy.*
 
-I dag kommer Hanne på besøk, og vi skal kjøre rundt i Hokkaido en ukes tid. Blir gøy! Så da må jeg komme meg tilbake til Sapporo heter å ha hengt i området rundt Yōtei.
+I dag kommer Hanne på besøk, og vi skal kjøre rundt i Hokkaido en ukes tid. Blir gøy! Så da må jeg komme meg tilbake til Sapporo etter å ha hengt i området rundt Yōtei.
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250911_085653.jpg)
 *[Noboribetsu, Hokkaido Prefecture, Japan](https://www.google.com/maps/place/42.498484099722226,141.14872309999998): Facinerende landskap*
 
-Kan ikke dra direkte til Hokkaido uten å oppleve litt ting. Så jeg stoppet innom Noboribetsu Jigokudani Valley, som er et område med høy sulfuraktivitet. Så her lukter det ganske kraftig, og man kan til tider kjenne varmen fra vannet i de små pyttene her.
+Kan ikke dra direkte til Sapporo uten å oppleve litt ting. Så jeg stoppet innom Noboribetsu Jigokudani Valley, som er et område med høy sulfuraktivitet. Så her lukter det ganske kraftig, og man kan til tider kjenne varmen fra vannet i de små pyttene her.
 
 Har besøkt lignende tidligere, lengre sør i Japan, og da har man ofte kunne kjøpt egg som har vært kokt i vannet, men det så jeg ikke her. Ikke at det har vært noen kulinarisk opplevelse akkurat.
 
