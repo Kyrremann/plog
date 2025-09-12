@@ -15,6 +15,8 @@ I dag kommer Hanne på besøk, og vi skal kjøre rundt i Hokkaido en ukes tid. B
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250911_085653.jpg)
+*[Noboribetsu, Hokkaido Prefecture, Japan](https://www.google.com/maps/place/42.498484099722226,141.14872309999998): Facinerende landskap*
+
 Kan ikke dra direkte til Hokkaido uten å oppleve litt ting. Så jeg stoppet innom Noboribetsu Jigokudani Valley, som er et område med høy sulfuraktivitet. Så her lukter det ganske kraftig, og man kan til tider kjenne varmen fra vannet i de små pyttene her.
 
 Har besøkt lignende tidligere, lengre sør i Japan, og da har man ofte kunne kjøpt egg som har vært kokt i vannet, men det så jeg ikke her. Ikke at det har vært noen kulinarisk opplevelse akkurat.
