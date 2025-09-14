@@ -1,6 +1,6 @@
 ---
 title: "Sightseeing i Sapporo"
-date: "2025-09-12"
+date: "2025-09-12 12:00"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250912_112141.jpg"
