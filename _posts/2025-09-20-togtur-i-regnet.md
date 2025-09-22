@@ -4,15 +4,7 @@ date: "2025-09-20"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250921_075646.jpg"
-
 ---
-
-
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250920_182614.jpg)
-*[Aomori, Aomori Prefecture, Japan](https://www.google.com/maps/place/40.8287855,140.7342897997222): Asian Para Games 2026!*
-
-Så denne plakaten når vi ankom Aomori, og jeg glemte å ta bilde av hele. Jeg trodde først de reklamerte for Paralympics 2026, men etter litt undersøkelser er det nok Asian Para Games 2026 som for første gang avholdes i Japan, i byen Nagoya!
-
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250921_075646.jpg)
 *[Aomori, Aomori Prefecture, Japan](https://www.google.com/maps/place/40.829894199722226,140.6940317): Været var dessverre ikke så flott når vi tok toget.*
@@ -28,3 +20,8 @@ I dag var den "store" reisedagen! Vi dro fra Sapporo helt ned til Aomori på Hon
 *[Hachinohe, Aomori Prefecture, Japan](https://www.google.com/maps/place/40.51015999972222,141.4313855997222): Shinkansen eller bullet train på engelsk er ganske kule!*
 
 Grunnen til at togene er formet med den lange nesen er ikke for å gjøre de raskere, men for å unngå at de lager et smell i det de kommer ut av en tunnel! For med den hastigheten de har så dytter de veldig mye luft foran seg, og før de lagde nesen, så kom det alltid et veldig høyt smell i det de kom ut av en tunnel. Til stor plage for lokalbefolkningen. Heter "tunnel boom" på engelsk.
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250920_182614.jpg)
+*[Aomori, Aomori Prefecture, Japan](https://www.google.com/maps/place/40.8287855,140.7342897997222): Asian Para Games 2026!*
+
+Så denne plakaten når vi ankom Aomori, og jeg glemte å ta bilde av hele. Jeg trodde først de reklamerte for Paralympics 2026, men etter litt undersøkelser er det nok Asian Para Games 2026 som for første gang avholdes i Japan, i byen Nagoya!
