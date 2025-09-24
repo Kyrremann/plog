@@ -53,4 +53,4 @@ I morgen kan dere glede dere til bilde av teltplassen jeg fant!
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250922_125759.jpg)
-*En liten bonus for dere som ser på jet Lag The Game på YouTube. *
+*En liten bonus for dere som ser på jet Lag The Game på YouTube.*
