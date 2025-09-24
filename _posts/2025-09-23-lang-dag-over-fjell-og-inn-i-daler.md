@@ -26,10 +26,6 @@ Uanset, dagens første mål var sykle opp til Okama-krateret, dette innebar 1244
 Etter å ha jobbet meg opp nesten helt til toppen finner jeg ut at man ikke har lov til å sykle de siste to kilometerene til toppen, kun lov med biler. Heldigvis gikk det en liten stolheis som jeg kunne ta. Utsikten vestover var fantastisk!
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_113347.jpg)
-*[Kaminoyama, Yamagata Prefecture, Japan](https://www.google.com/maps/place/38.14380799972222,140.43946239972223): Var et ganske tydelig skille mellom øst og vest.*
-
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_113351.jpg)
 *[Kaminoyama, Yamagata Prefecture, Japan](https://www.google.com/maps/place/38.14380799972222,140.43946239972223): Opp den veien hadde jeg syklet!*
 
@@ -42,6 +38,10 @@ Etter å ha jobbet meg opp nesten helt til toppen finner jeg ut at man ikke har 
 *[Shichikashuku, Miyagi Prefecture, Japan](https://www.google.com/maps/place/38.130848,140.4443008): Jaja, får komme tilbake en annen gang.*
 
 Som dere ser på bildet over, så er hele østsiden av fjellet kledd i skyer, så det var ingen krater for meg å se. Var tydeligvis så skuffet at jeg ikke tok et bilde den retningen krateret er engang.
+
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_113347.jpg)
+*[Kaminoyama, Yamagata Prefecture, Japan](https://www.google.com/maps/place/38.14380799972222,140.43946239972223): Var et ganske tydelig skille mellom øst og vest.*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_122618.jpg)
