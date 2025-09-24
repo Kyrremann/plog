@@ -7,13 +7,15 @@ feature:
 strava: "https://strava.app.link/s5AmdMFZUWb"
 ---
 
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/Snapchat-156914017.jpg)
+*Shinkansenbonanza!*
+
+Da var ferien med Hanne over, og jeg skal ut på nye eventyr med sykkelen min! Både gøy, og litt trist. Vært veldig koselig å oppleve Hokkaido med Hanne.
+
+Dag en startet med en tur med Shinkansen fra Aomori ned til Sendai, hvor jeg så tog lokaltog en time inn i fjellene til Yamader a.
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250922_121804.jpg)
 *Resten av sykkelbaggasjen ligger å venter på et fraktkontor.*
-
-
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250922_125759.jpg)
-*En liten bonus for dere som ser på jet Lag The Game på YouTube.*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250922_134749.jpg)
@@ -50,9 +52,5 @@ Bildet over er egentlig ganske typisk for fortau langs veien på landet. Derfor 
 I morgen kan dere glede dere til bilde av teltplassen jeg fant!
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/Snapchat-156914017.jpg)
-*Shinkansenbonanza!*
-
-Da var ferien med Hanne over, og jeg skal ut på nye eventyr med sykkelen min! Både gøy, og litt trist. Vært veldig koselig å oppleve Hokkaido med Hanne.
-
-Dag en startet med en tur med Shinkansen fra Aomori ned til Sendai, hvor jeg så tog lokaltog en time inn i fjellene til Yamadera.
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250922_125759.jpg)
+*En liten bonus for dere som ser på jet Lag The Game på YouTube. *
