@@ -63,7 +63,7 @@ Før jeg rundet svingen og så hvor veien gikk, så trodde jeg et øyeblikk at j
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_160154.jpg)
-*[Shiroishi, Miyagi Prefecture, Japan](https://www.google.com/maps/place/38.033811199999995,140.5454464): Såklart kom jeg opp fra skogsbilveien.*
+*[Shiroishi, Miyagi Prefecture, Japan](https://www.google.com/maps/place/38.033811199999995,140.5454464): Så klart kom jeg opp fra skogsbilveien.*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250923_160958.jpg)
