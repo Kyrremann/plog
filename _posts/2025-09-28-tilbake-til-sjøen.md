@@ -64,3 +64,5 @@ Var et ganske fint togmuseum. Handlet hovedsakelig om hvordan toglinjene hadde u
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250928_131537.jpg)
 *[Akiha Ward, Niigata, Niigata Prefecture, Japan](https://www.google.com/maps/place/37.8121567,139.12016629972223): Klassisk bilde fra Japan, et tog som passerer.*
+
+Dette er også min 45. dag i Japan for denne turen. Midtpunktet, nå er det bare å telle ned til hjemturen. Heldigvis fortsatt masse å oppleve! Selv om jeg merker at jeg ikke har fordøyd alt jeg allerede har opplevd.
