@@ -8,14 +8,13 @@ strava: "https://strava.app.link/rckYujfNmXb"
 ---
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251010_094521.jpg)
-*[Toyama, Toyama Prefecture, Japan](https://www.google.com/maps/place/36.692209299999995,137.2118739997222): Samuraihjelm inspirert av fisken maller. Silvered catfish helmet på engelsk.*
-
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251010_100511.jpg)
 *[Toyama, Toyama Prefecture, Japan](https://www.google.com/maps/place/36.692233599999994,137.21066239972222): Slottet i Toyama.*
 
 I dag var jeg ute av fjellene. Var deilig å sykle hovedsakelig flatt igjen. Er gøy med fjell, men noen ganger vil man bare ligge i tempobøyla og suse avgårde! Noe jeg skal gjøre de neste dagene hele veien til Kobe, hvor jeg skal møte mamma og pappa. Gleder meg!
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251010_094521.jpg)
+*[Toyama, Toyama Prefecture, Japan](https://www.google.com/maps/place/36.692209299999995,137.2118739997222): Samuraihjelm inspirert av fisken maller. Silvered catfish helmet på engelsk.*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251010_113928.jpg)
