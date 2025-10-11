@@ -1,6 +1,6 @@
 ---
 title: "Ferdig med fjellene for denne gangen"
-date: "2025-10-10"
+date: "2025-10-09"
 categories: "Bikepacking Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251009_102953.jpg"
