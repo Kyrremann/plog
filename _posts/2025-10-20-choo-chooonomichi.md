@@ -31,4 +31,4 @@ Før jeg tok toget så rakk jeg en tur innom slottet i Matsue. På torsdag så f
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251020_204926.jpg)
 *[Onomichi, Hiroshima Prefecture, Japan](https://www.google.com/maps/place/34.4059424,133.1957888): Jeg liker å ta bilder av bakgater i mørket.*
 
-I april i fjor var jeg også i Onomichi og tok et bilde av en bakgate. Prøvde å ta bilde av den samme gaten, men ser nå i ettertid at jeg bommet. Du kan se det andre i bunnen her: https://kyrremann.no/plog/2024/03/japan-1
+I april i fjor var jeg også i Onomichi og tok et bilde av en bakgate. Prøvde å ta bilde av den samme gaten, men ser nå i ettertid at jeg bommet. Du kan se det andre i bunnen her: [https://kyrremann.no/plog/2024/03/japan-1](Bikepacking Shikoku, Japan: Day 1)
