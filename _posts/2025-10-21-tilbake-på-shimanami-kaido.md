@@ -19,7 +19,12 @@ I dag skal alle på sykkeltur, for vi skal sykle Shimanami Kaido som er en popul
 
 Den mest populære ruta er på 75km, men vi skal ta dette over to dager. Derfor skal vi overnatte på en tradisjonell ryokan, hvor vi sover på futon, og får tilberedt tradisjonell japansk middag og frokost. Noe som ble litt av en overraskelse for mamma og pappa. Her går man med tøfler inne, og man bytter til toalettøfler når man går på do, og det var egne tøfler når vi gikk til middagen. Det har ikke jeg vært borti før. Vi fikk også hver vår yukata til å ha på oss når vi var på ryokaen, det er veldig kjekt når man er på sykkeltur, mindre klær å ha med seg.
 
-Middagen var lokal fisk, sashimi/rå, stekt, og kokt. Sashimien kom i en stilig trebåt! De som jobbet der var veldig trivelige, og flinke til å fortelle mamma og pappa hvordan man skulle spise de forskjellige rettene. Så kan virkelig anbefale Sawaki Ryokan. 
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251021_184052.jpg)
+*[Imabari, Ehime Prefecture, Japan](https://www.google.com/maps/place/34.248099199722226,133.0017971): Heftig middag, i japansk bekledning.*
+
+
+Middagen var lokal fisk, sashimi/rå, stekt, og kokt. Sashimien kom i en stilig trebåt! De som jobbet der var veldig trivelige, og flinke til å fortelle mamma og pappa hvordan man skulle spise de forskjellige rettene. Så kan virkelig anbefale Sawaki Ryokan.
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251021_113014.jpg)
@@ -60,7 +65,3 @@ Ruta er som nevnt knyttet sammen med bruer, og de har lagd egne sykkelstier for 
 *[Imabari, Ehime Prefecture, Japan](https://www.google.com/maps/place/34.25425729972222,133.0538296): De har sølv og gull også, så si i fra hvis du har lyst til å sykle rundt Shikoku med meg!*
 
 I fjor syklet jeg rundt Shikoku, og som en del av den utfordringen fikk jeg en spacer til å ha på sykkelen. Dessverre må den hentes fysisk, og ikke rett etter man har syklet turen, for man må sende inn et skjema. Så derfor var det jo ekstra kjekt at jeg kunne sykle innom og hente den mens jeg var her med mamma og pappa. 
-
-
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251021_184052.jpg)
-*[Imabari, Ehime Prefecture, Japan](https://www.google.com/maps/place/34.248099199722226,133.0017971): Heftig middag, i japansk bekledning.*
