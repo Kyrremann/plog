@@ -8,14 +8,14 @@ feature:
 ---
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251024_101655.jpg)
-*[Nishi Ward, Nagoya, Aichi Prefecture, Japan](https://www.google.com/maps/place/35.182753899999994,136.8946684): Aldri sett en automat som selger ferdigkokt søtpotet før!*
-
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251024_102347.jpg)
 *[Naka Ward, Nagoya, Aichi Prefecture, Japan](https://www.google.com/maps/place/35.18401599972222,136.8984063997222): Slottet i Nagoya lå vakkert til.*
 
 Ingen store planer for i dag, bortsett fra å komme meg til Tokyo. Var deilig å kunne sove ut, og ikke måtte stå opp for å rekke noe. Før jeg fant et tog til Tokyo måtte jeg så klart besøke det flotte slottet i Nagoya.
+
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251024_101655.jpg)
+*[Nishi Ward, Nagoya, Aichi Prefecture, Japan](https://www.google.com/maps/place/35.182753899999994,136.8946684): Aldri sett en automat som selger ferdigkokt søtpotet før!*
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251024_104718.jpg)
