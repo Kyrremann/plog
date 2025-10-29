@@ -55,7 +55,9 @@ Var ikke bare aper jeg møtte heller! Jeg så flere gjort også. Akkurat disse h
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251028_124939.jpg)
 *Denne var for opptatt med å spise til å se på meg.*
 
-De første hjorten jeg møtte var veldig sky, og jeg så de bare løpe inne i skogen. Etterhvert som jeg kom lengre inn i vestsiden, så var de mer avslappet, og jeg kunne sykle ganske nærme de. Mot slutten av de 25km som regnes som vestsiden så ble det nesten ikke spennende lengre med alle hjorten og apene, men bare nesten.
+De første hjortene jeg møtte var veldig sky, så jeg så de bare løpe inne i skogen. Etterhvert som jeg kom lengre inn i vestsiden, så var de mer avslappet, og jeg kunne sykle ganske nærme.
+
+Mot slutten av de 25km som regnes som vestsiden så var det nesten ikke spennende lengre med alle hjorten og apene, men bare nesten.
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251028_131138.jpg)
