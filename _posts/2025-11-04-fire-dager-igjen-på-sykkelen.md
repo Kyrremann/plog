@@ -9,7 +9,7 @@ strava: "https://strava.app.link/JBpyllzk2Xb"
 
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251104_093423.jpg)
-*[Nagasaki, Nagasaki Prefecture, Japan](https://www.google.com/maps/place/32.74689599972222,129.879424): Broen som ligner på et par med briller.*
+*[Nagasaki, Nagasaki Prefecture, Japan](https://www.google.com/maps/place/32.74689599972222,129.879424): Broen som ligner på et par briller.*
 
 Da var oppholdet mitt i Nagasaki over, og det var på tide å sykle videre. Fire dager igjen med sykling, så er min lengste sykkeltur noen gang over! Rart å tenke på. Blir hovedsakelig bilvei de neste dagene, dels fordi det er enklere, men også rett og slett fordi det ikke er så mange andre veier i dette området. Hele området gir litt norske vibber med trange daler.
 
