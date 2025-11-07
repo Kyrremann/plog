@@ -51,10 +51,11 @@ Igjen var all informasjon på japansk, og nå er jeg såpass lei at jeg bare gik
 
 Noe som minner meg på at jeg nok ikke har fortalt om alle suvenirene jeg har kjøpt og hengt på styret. Har prøvd å kjøpe på de fleste turiststedene jeg har vært. Så har blitt en del igjennom turen. Jeg får lage et eget innlegg om de når jeg kommer hjem.
 
-
-![]()
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251106_164201.jpg)
 *[Karatsu, Saga Prefecture, Japan](https://www.google.com/maps/place/33.430931199999996,130.02520319972223): Helt i enden av skogen ligger slottet.*
 
 Jeg avsluttet dagens tur i Karatsu, hvor de for 400 år siden begynte å lage et skogsbelte for å beskytte innbyggerne mot vinden og sandstranden. Det er skogsbelte du ser i bilde ovenfor. Jeg hadde opprinnelig tenkt å legge meg inne i skogen, men det var ikke så koselig, så endte opp med å legge med ved en strandbar som var stengt for sesongen.
+
+
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251106_165013.jpg)
+*Hvis noen lurte på hvorfor jeg avsluttet dagen med å sykle opp og ned et fjell, så var det for å se dette monumentet!*
