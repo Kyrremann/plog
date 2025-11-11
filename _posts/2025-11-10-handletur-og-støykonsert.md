@@ -1,6 +1,6 @@
 ---
 title: "Handletur og støykonsert"
-date: "2025-11-10"
+date: "2025-11-10 12:00"
 categories: "Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251110_123322.jpg"
