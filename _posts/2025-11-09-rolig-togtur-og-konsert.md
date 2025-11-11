@@ -1,6 +1,6 @@
 ---
 title: "Rolig togtur og konsert"
-date: "2025-11-10"
+date: "2025-11-09 12:00:00"
 categories: "Japan "
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251109_105512.jpg"
