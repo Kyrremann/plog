@@ -20,4 +20,15 @@ layout: default
   <article>
     {{ content }}
   </article>
+
+  {% if page.previous %}
+    <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
+      &larr; <span class="nav-title nav-title-next">forrige</span>
+    </a>
+  {% endif %}
+  {% if page.next %}
+    <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
+      <span class="nav-title nav-title-prev">neste</span> &rarr;
+    </a>
+  {% endif %}
 </div>

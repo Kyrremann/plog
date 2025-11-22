@@ -45,3 +45,64 @@ img + em {
   word-wrap: break-word;
   white-space: pre-wrap;
 }
+
+/**
+ * Pagination
+ */
+#prev,
+#next {
+  position: fixed;
+  text-decoration: none;
+  background: #edfaff;
+  border: 1px solid #B4DCED;
+  padding: .5em;
+  line-height: 1;
+  border-radius: 100px;
+  bottom: 2em;
+  color: #333;
+  @media (max-width: 942px) {
+    position: static;
+    padding: .8em 1em .7em;
+  }
+}
+
+#next {
+  right: 40px;
+  @media (max-width: 942px) {
+    float: right;
+  }
+}
+
+#prev {
+  left: 40px;
+  @media (max-width: 942px) {
+    float: left;
+  }
+}
+
+#prev:active,
+#next:active {
+  border-color: #B4DCED;
+}
+
+.nav-title {
+  display: none;
+  @media (max-width: 942px) {
+    display: inline;
+  }
+}
+
+.nav-title-prev {
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.nav-title-next {
+  margin-right: .5em;
+  margin-left: .5em;
+}
+
+#prev:hover .nav-title,
+#next:hover .nav-title {
+  display: inline;
+}
