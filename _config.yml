@@ -20,8 +20,8 @@ plugins:
 #  path: rss-feed.xml
 
 pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
+  next_page: 'Nyere'
+  previous_page: 'Eldre'
 
 defaults:
   -
