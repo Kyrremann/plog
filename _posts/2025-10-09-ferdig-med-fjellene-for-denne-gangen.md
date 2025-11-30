@@ -60,7 +60,7 @@ En liten del av templet var satt av til grunnleggeren av tempelet, som, ikke ove
 *[Hida, Gifu Prefecture, Japan](https://www.google.com/maps/place/36.26208499972222,137.20356229972222): Enda en flott dag å sykle på.*
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251009_152344(0).jpg)
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251009_152344.jpg)
 *[Hida, Gifu Prefecture, Japan](https://www.google.com/maps/place/36.30662629972222,137.27176009972223): I gamledager hadde ikke Japan et eget ord for grønt, så derfor kan man se blått lys for kjør.*
 
 

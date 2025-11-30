@@ -12,7 +12,7 @@ feature:
 I dag var den "store" reisedagen! Vi dro fra Sapporo helt ned til Aomori på Honshu (hovedøya). Dessverre er ikke Shinkansen bygd opp til Sapporo, så vi måtte ta et fire timers lokaltog ned til Hakodate, hvor det var en time på Shinkansen. Lokaltoget føltes veldig likt som norske tog, bare kanskje litt mer bråkete, og uten servering. Hvis man skal til Japan vil jeg virkelig anbefale å ta Shinkansen minst en gang, for det er en veldig kul opplevelse!
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250921_101235(0).jpg)
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/09/20250921_101235.jpg)
 *[Oirase, Aomori Prefecture, Japan](https://www.google.com/maps/place/40.5889888,141.3944831997222): Zooooom!*
 
 

@@ -54,7 +54,7 @@ Etter Too og Seabirth spilte Kildren, som var det eneste stereotypiske shoegaze 
 *[Chofu, Japan](https://www.google.com/maps/place/35.6555035,139.5674453): Gitaristen til AprilBlue.*
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251109_220419(0).jpg)
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/11/20251109_220419.jpg)
 *[Chofu, Japan](https://www.google.com/maps/place/35.6555035,139.5674453): Vokalisten til AprilBlue.*
 
 

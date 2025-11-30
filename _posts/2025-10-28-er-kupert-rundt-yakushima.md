@@ -46,7 +46,7 @@ Dette var de første apene jeg møtte på øya, og de hadde spredd seg ut over v
 Viste seg å være flust av de. De hang som regel ved veikanten, eller i et tre, men støtt og stadig slappet de av i veien så man måtte styre rundt de.
 
 
-![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251028_123939(0).jpg)
+![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251028_123939.jpg)
 *Drev å tenkte at de hornene kunne ødelegge hjulene mine ganske godt, hvis den plutselig angrep.*
 
 Var ikke bare aper jeg møtte heller! Jeg så flere gjort også. Akkurat disse hjortene, som apene, så finnes de kun på Yakushima, og de er betraktelig mindre enn lengre nord i Japan, og mye mindre enn de jeg så i Hokkaido!
