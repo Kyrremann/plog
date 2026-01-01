@@ -41,7 +41,7 @@ Jeg var litt nervøs for om jeg ville rekke ferja fra Wakkanai til Rishiri, men 
 
 
 ![Havet i forgrunnen, med en vulkanskøy i det fjerne. ](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250815_180247.jpg)
-Morgendagens mål. 1721m, og nesten like mange høydemeter å klatre! Spent på den turen, men været ser veldig lovende ut! 
+*Morgendagens mål. 1721m, og nesten like mange høydemeter å klatre! Spent på den turen, men været ser veldig lovende ut!*
 
 
 ![En lang rett vei, med hus på begge sider. Man ser solen gå ned. ](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/08/20250815_182919.jpg)
