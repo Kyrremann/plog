@@ -25,7 +25,6 @@ Jeg var litt spent på turen, da jeg var litt sliten i beina, og skulle egentlig
 
 På veien oppover var det en strekning på 5 km med tunneler, men jeg var veldig heldig, og fikk bare et par biler bak meg. Så det føltes mye mindre skummelt enn jeg var redd for.
 
-
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2025/10/20251007_140318.jpg)
 *[Matsumoto, Nagano Prefecture, Japan](https://www.google.com/maps/place/36.11166719972223,137.5623936): Jeg var ikke den eneste som var ute å syklet.*
 

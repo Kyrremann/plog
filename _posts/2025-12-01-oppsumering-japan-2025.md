@@ -64,13 +64,6 @@ Føltes nesten ut som at jeg hadde fått en ny sykkel når jeg fikk den tilbake.
 Endte opp med å bytte girvaiere, kassett, ventiler, og nytt felgbånd.
 Mot slutten nå så begynte kranken å lage litt lyd, så det blir et prosjekt i vinter.
 
-Ellers var turen opp til Norikura, som er det høyeste punket man kan nå med sykkel i Japan en fantastisk tur.
-Jeg startet i byen Matsumoto, syklet tilsammen 5km med tunneler, før selve stigningen skikkelig begynte.
-På veien opp gikk jeg fra grønne trær, til at høstfargene bare ble kraftigere og kraftigere!
-Tilsammen brukte jeg 7,5t opp, 4,5 med aktiv sykling.
-Turen opp til Norikura vil jeg virkelig anbefale!
-Du bør nok starte fra Matsumoto, da jeg ikke så noen steder å hvile på veien ned på den andre siden.
-
 Som nevnt så hadde jeg tre nestenulykker, heldigvis gikk de bra.
 To av gangene mener jeg at det var bilisten sin feil, da de begge valgte å ta innersvingen der jeg kommer syklende i motgående felt.
 På den ene så var det jeg som ikke så meg godt nok over i det jeg skulle svinge over veien, for der kom det jammen meg en lastebil.
