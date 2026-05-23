@@ -87,7 +87,7 @@ permalink: /nyhetsbrev
         <div style="padding: 8px 0;">
           <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
             <div class="sib-text-form-block">
-              <p>Abonner på nyhetsbrevet mitt for å følge med på min 90 dagers lange tur i Japan! Planen er at du vil få en e-post om dagen med dagens oppsummering. Du kan alltids melde deg av hvis det blir for mye.</p>
+              <p>Abonner på nyhetsbrevet mitt for å følge med på mine sykkeltuere i inn og utland! Planen er at du vil få en e-post om dagen med dagens oppsummering. Du kan alltid melde deg av hvis det blir for mye.</p>
               <p>Etter at du har fylt inn e-posten din, og klikket på "abonner", så vil du få en e-post hvor du må bekrefte at du vil følge nyhetsbrevet mitt. Hvis den ikke dukker opp kan den ha havnet i søppelposten.</p>
             </div>
           </div>
