@@ -12,4 +12,3 @@ Development
 ===========
 
 Site hosted by Github pages, and images hosted by Scaleway storage using the `Bucket website` feature.
-
