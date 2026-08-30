@@ -8,7 +8,6 @@
 }
 .footer a {
   color: $brand-color;
-  padding: 0px 10px 0px;
   text-decoration: none;
 }
 @media (max-width: $container-width) {
@@ -26,4 +25,8 @@
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-size:0.8rem;
+}
+.rss {
+		width: 32px;
+		margin: auto;
 }
