@@ -1,5 +1,5 @@
 ---
-title: "En dag i Seouk"
+title: "En dag i Seoul"
 date: "2026-09-21"
 categories: "bikepacking korea"
 feature:
