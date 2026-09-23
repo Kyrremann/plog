@@ -3,7 +3,8 @@ title: "Jet-lagged"
 date: "2026-09-22"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260922_072640.jpg"strava: "https://strava.app.link/zWNvD4iIE6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260922_072640.jpg"
+strava: "https://strava.app.link/zWNvD4iIE6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260922_072640.jpg)
