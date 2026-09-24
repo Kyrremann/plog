@@ -3,7 +3,8 @@ title: "Bratte bakker og teltplasser"
 date: "2026-09-23"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260923_091734.jpg"strava: "https://strava.app.link/AJqqc5ywG6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260923_091734.jpg"
+strava: "https://strava.app.link/AJqqc5ywG6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260923_091734.jpg)
