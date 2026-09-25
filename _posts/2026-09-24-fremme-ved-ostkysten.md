@@ -3,7 +3,8 @@ title: "Fremme ved østkysten"
 date: "2026-09-24"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260924_095358.jpg"strava: "https://strava.app.link/hIGqXL3aI6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260924_095358.jpg"
+strava: "https://strava.app.link/hIGqXL3aI6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260924_095358.jpg)
