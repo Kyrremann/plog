@@ -3,7 +3,8 @@ title: "Busan neste"
 date: "2026-09-25"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260925_084238.jpg"strava: "https://strava.app.link/2llKAsiOJ6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260925_084238.jpg"
+strava: "https://strava.app.link/2llKAsiOJ6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260925_084238.jpg)
