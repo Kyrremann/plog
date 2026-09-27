@@ -3,7 +3,8 @@ title: "På tide å få vasket klær"
 date: "2026-09-26"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260926_095319.jpg"strava: "https://strava.app.link/0U3wuzHwL6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260926_095319.jpg"
+strava: "https://strava.app.link/0U3wuzHwL6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260926_095319.jpg)
