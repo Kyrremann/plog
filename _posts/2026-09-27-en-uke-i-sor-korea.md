@@ -3,7 +3,8 @@ title: "En uke i Sør-Korea"
 date: "2026-09-27"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260927_085244.jpg"strava: "https://www.strava.com/activities/20348699916"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260927_085244.jpg"
+strava: "https://www.strava.com/activities/20348699916"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260927_085244.jpg)
