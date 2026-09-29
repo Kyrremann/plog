@@ -3,7 +3,8 @@ title: "Ferdig med østkysten"
 date: "2026-09-28"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260928_082942.jpg"strava: "https://strava.app.link/ellrshTTO6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260928_082942.jpg"
+strava: "https://strava.app.link/ellrshTTO6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260928_082942.jpg)
