@@ -3,11 +3,8 @@ title: "To dager i Busan"
 date: "2026-09-30"
 categories: "bikepacking korea"
 feature:
-  image: ""
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260930_124410.jpg"
 ---
-
-![]()
-
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/09/20260930_124410.jpg)
 *[우2동, Busan, 대한민국](https://www.google.com/maps/place/35.166790,129.137009): Alltid Interresant med moderne kunst.*
