@@ -3,18 +3,18 @@ title: "Incheon neste"
 date: "2026-10-01"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_091636.jpg"strava: "https://strava.app.link/1ivQ5HNNT6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_091636.jpg"
+strava: "https://strava.app.link/1ivQ5HNNT6b"
 ---
-
-<video width="640" preload="auto" controls src="https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_091428.mp4" type="video/mp4">
-	Your browser does not support HTML5 video.
-</video>
-
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_091636.jpg)
 *[동구, Busan, 대한민국](https://www.google.com/maps/place/35.113235,129.048218): Haien Bukangi! *
 
 Da var det endelig ut på nye eventyr! Dagen startet med å sykle ned for å se haien Bukangi som har forvillet seg inn i havnebassenget til Busan. Tok ikke lang tid før den dukket opp, og den var svært! Over tre meter sier Internett. Montro om dette var høydepunktet for dagen.
+
+<video width="640" preload="auto" controls src="https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_091428.mp4" type="video/mp4">
+	Your browser does not support HTML5 video.
+</video>
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261001_102834.jpg)
 *[하단2동, Busan, 대한민국](https://www.google.com/maps/place/35.108463,128.947983): Ved startstreken, 633km til mål i Incheon.*
