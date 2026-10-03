@@ -3,7 +3,8 @@ title: "Korea på tvers"
 date: "2026-10-02"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261002_082050.jpg"strava: "https://strava.app.link/qeE4PHPpV6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261002_082050.jpg"
+strava: "https://strava.app.link/qeE4PHPpV6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261002_082050.jpg)
