@@ -3,7 +3,8 @@ title: "Suser av gårde"
 date: "2026-10-03"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261003_061831.jpg"strava: "https://strava.app.link/vdbfB14ZW6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261003_061831.jpg"
+strava: "https://strava.app.link/vdbfB14ZW6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261003_061831.jpg)
