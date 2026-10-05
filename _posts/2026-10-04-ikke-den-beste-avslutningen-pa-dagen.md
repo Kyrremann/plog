@@ -3,7 +3,8 @@ title: "Ikke den beste avslutningen på dagen"
 date: "2026-10-04"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261004_073549.jpg"strava: "https://strava.app.link/sK7iuDcSY6b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261004_073549.jpg"
+strava: "https://strava.app.link/sK7iuDcSY6b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261004_073549.jpg)
