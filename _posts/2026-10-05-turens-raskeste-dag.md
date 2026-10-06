@@ -3,7 +3,8 @@ title: "Turens raskeste dag"
 date: "2026-10-05"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261005_085152.jpg"strava: "https://strava.app.link/IQSaSNUh06b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261005_085152.jpg"
+strava: "https://strava.app.link/IQSaSNUh06b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261005_085152.jpg)
