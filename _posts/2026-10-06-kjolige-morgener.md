@@ -3,7 +3,8 @@ title: "Kjølige morgener"
 date: "2026-10-06"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261006_070418.jpg"strava: "https://strava.app.link/HAf2Uk9f26b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261006_070418.jpg"
+strava: "https://strava.app.link/HAf2Uk9f26b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261006_070418.jpg)
