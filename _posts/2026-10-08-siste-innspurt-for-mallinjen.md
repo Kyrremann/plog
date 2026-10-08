@@ -3,7 +3,8 @@ title: "Siste innspurt for mållinjen"
 date: "2026-10-08"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261007_094250.jpg"strava: "https://strava.app.link/nOwya7eD36b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261007_094250.jpg"
+strava: "https://strava.app.link/nOwya7eD36b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261007_094250.jpg)
