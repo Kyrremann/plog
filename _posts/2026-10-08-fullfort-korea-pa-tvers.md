@@ -3,7 +3,8 @@ title: "Fullført Korea på tvers"
 date: "2026-10-08"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_112313.jpg"strava: "https://strava.app.link/2jyl1bLq56b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_112313.jpg"
+strava: "https://strava.app.link/2jyl1bLq56b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_093527.jpg)
@@ -14,15 +15,10 @@ Da var siste stempeltur i Korea over for denne gangen. Fikk tatt tre av rutene, 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_112313.jpg)
 *[검암경서동, Incheon, 대한민국](https://www.google.com/maps/place/37.556572,126.604454): Fått meg litt bling!*
 
-Selv om jeg var ferdig med p samle stempler, var ikke turen helt over. Jeg har en natt igjen før Hanne kommer, og vi skal ha litt storbyferie, så en siste post gjenstår.
+Selv om jeg var ferdig med å samle stempler, var ikke turen helt over. Jeg har en natt igjen før Hanne kommer, og vi skal ha litt storbyferie, så en siste post gjenstår.
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_132941.jpg)
 *[불은면, Incheon, 대한민국](https://www.google.com/maps/place/37.661266,126.524231): Intenst blikk på tigeren.*
-
-
-
-![]()
-
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261008_152117.jpg)
 *[양사면, Incheon, 대한민국](https://www.google.com/maps/place/37.826385,126.433090): Denne lille landsbyen er 2,3km unna der jeg står.*
