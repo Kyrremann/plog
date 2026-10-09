@@ -1,6 +1,6 @@
 ---
 title: "Siste innspurt for mållinjen"
-date: "2026-10-08"
+date: "2026-10-07"
 categories: "bikepacking korea"
 feature:
   image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261007_094250.jpg"
