@@ -3,7 +3,8 @@ title: "Takk til Sør-Korea"
 date: "2026-10-09"
 categories: "bikepacking korea"
 feature:
-  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261009_075407.jpg"strava: "https://strava.app.link/ms7EFh6j76b"
+  image: "https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261009_075407.jpg"
+strava: "https://strava.app.link/ms7EFh6j76b"
 ---
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261009_075407.jpg)
