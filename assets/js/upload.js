@@ -38,7 +38,7 @@ pond.on('removefile', (error, file) => {
 		element.remove();
 	}
 
-	element = document.getElementById('form_' + file.filename + '_location');
+	element = document.getElementById(file.filename + '_location');
 	if (element) {
 		element.remove();
 	}
