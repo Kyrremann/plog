@@ -5,6 +5,8 @@ author: Kyrre Havik
 # jekyll-paginate configuration
 paginate: 5
 
+goat_counter: kyrremann
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
