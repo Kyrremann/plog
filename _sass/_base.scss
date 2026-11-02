@@ -47,6 +47,11 @@ img {
   display: block;
   max-width: 768px;
 }
+video {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 
 p {
   display: block;
