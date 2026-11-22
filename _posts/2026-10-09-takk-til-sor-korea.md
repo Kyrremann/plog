@@ -13,7 +13,7 @@ strava: "https://strava.app.link/ms7EFh6j76b"
 Da var sykkelturen over for denne gangen, og en ukes byferie tar over. Som alltid er det deilig å være ferdig, men også litt trist. Er deilig å være ute hele dagen, sykle rundt, og se nye ting. Dessverre kan ikke love være en evig reise, hadde kanskje også blitt litt lei etterhvert også.
 
 ![](https://kyrremann-plog.s3.nl-ams.scw.cloud/images/2026/10/20261009_084319.jpg)
-*[하점면, Incheon, 대한민국](https://www.google.com/maps/place/37.776623,126.435402): Kjøpte meg en bamse på turens siste museum, ble ikke like mye nips. *
+*[하점면, Incheon, 대한민국](https://www.google.com/maps/place/37.776623,126.435402): Kjøpte meg en bamse på turens siste museum, ble ikke like mye nips.*
 
 Som bildet over viser så klarte jeg å samle litt nips på turen. Fant også noen pins, men de har jeg ikke bilde av. Var ikke like lett som i Japan, og var mange museumer og steder som ikke solgte småting knyttet til stedet. Var noen steder som solgte hva jeg vil kalle juggel, som man kunne bestilt på nettet eller kjøpt hvor som helst ellers i verden. Det var litt kjedelig, for jeg liker å se tilbake på hva jeg har kjøpt og minnes om opplevelsene jeg hadde.
 

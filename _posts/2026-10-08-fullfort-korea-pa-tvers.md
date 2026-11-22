@@ -35,4 +35,4 @@ Man kunne se folk arbeide på åkerne, og noen som syklet rundt. Var også mulig
 
 Etter å ha løsrevet meg fra å se på Nord-Korea, syklet jeg inn mot midten av øya. Siden jeg hadde vært igjennom to passkontroll tenkte jeg at det var best å finne en offisiell teltplass for min siste natt. Var ikke den beste plassen, da jeg måtte sove på grus. Tror grus er det kjipeste å sove på, bedre med flat betong.
 
-Ellers lærte jeg at 40% av alle dysser (engelsk; Dolmen finnes i Korea! Noen har jobbet hardt for å få løftet disse store steinen dit de er nå!
+Ellers lærte jeg at 40% av alle dysser (engelsk; Dolmen) finnes i Korea! Noen har jobbet hardt for å få løftet disse store steinen dit de er nå!
